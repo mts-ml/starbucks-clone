@@ -60,7 +60,7 @@ export const Header: React.FC = () => {
                         </button>
                     </div>
 
-                    <div className={`fixed top-0 z-20 px-7 pt-32 h-full transition-all duration-1000 ease-in-out bg-white w-4/5 ${toggleMenu ? 'right-0' : '-right-[600px]'}`}>
+                    <div className={`min803:hidden fixed top-0 z-20 px-7 pt-32 h-full transition-all duration-1000 ease-in-out bg-white w-4/5 ${toggleMenu ? 'right-0' : '-right-[700px]'}`}>
 
                         <hr className='absolute mt-[1.1rem] top-14 w-full left-0 border' />
 
@@ -98,7 +98,7 @@ export const Header: React.FC = () => {
                         </div>
                     </div>
 
-                    {toggleMenu && <div className='fixed z-10 inset-0 bg-black opacity-50'></div>}
+                    {toggleMenu && <div className='min803:hidden fixed z-10 inset-0 bg-black opacity-50'></div>}
 
                     <div className='hidden min803:flex md:items-center justify-between md:m-4 xl:mx-0 xl:justify-between'>
                         <div className='md:flex md:items-center'>
