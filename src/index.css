@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+input,
+textarea,
+button,
+select {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
