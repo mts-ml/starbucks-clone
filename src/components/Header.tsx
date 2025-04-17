@@ -64,8 +64,8 @@ export const Header: React.FC = () => {
 
                         <hr className='absolute mt-[1.1rem] top-14 w-full left-0 border' />
 
-                        <ul className='flex flex-col gap-6 font-semibold text-[1.188rem]'>
-                            <li>Menu</li>
+                        <ul className='flex flex-col gap-6 font-medium text-[1.188rem]'>
+                            <li><Link to="menu">Menu</Link></li>
                             <li>Rewards</li>
                             <li>Gift Cards</li>
                         </ul>
