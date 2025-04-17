@@ -1,6 +1,6 @@
 export const Home: React.FC = () => {
    return (
-      <main className="mt-8 max-w-7xl mx-auto">
+      <main className="mt-8 max-w-[91rem] mx-auto">
 
          {/* 1º section */}
          <section className="md:flex md:flex-row-reverse bg-[#32462F] text-[#FFFCF8] font-semibold text-center mb-8">
@@ -103,19 +103,17 @@ export const Home: React.FC = () => {
             </div>
          </section>
 
-         <p className="text-center text-[0.813rem] md:text-sm px-6 font-medium tracking-wide mt-16 mb-24">
+         <p className="mx-auto text-center text-[0.813rem] md:text-sm px-6 font-medium tracking-wide mt-16 mb-24 max-w-[85ch]">
             *Valid for new Starbucks Rewards members for 7 days from sign up. Coupon will be available in the offers tab of your Starbucks app following sign up and may take up to 48 hours to arrive. Good at participating U.S. stores for a handcrafted menu-sized beverage with qualifying purchase ($8 max value). Qualifying purchase excludes alcohol, Starbucks Card and Card reloads. Limit one. Cannot be combined with other offers or discounts. Excludes delivery services. Sign up before 6/29/2025.
          </p>
 
-         <p className="text-center text-[0.813rem] md:text-sm px-6 font-medium tracking-wide mb-8">
+         <p className="mx-auto text-center text-[0.813rem] md:text-sm px-6 font-medium tracking-wide mb-8 max-w-[85ch]">
             **Free refills of hot and iced brewed coffee or tea during same store visit. Excludes Cold Brew, Nitro Cold Brew, Iced Tea Lemonade, and flavored Iced Tea and Starbucks Refreshers® base. At participating stores. Visit <a
             href="https://about.starbucks.com/backtostarbucks/"
             target="_blank"
             rel="noopener noreferrer"
             className="underline hover:no-underline">http://starbucks.com/refills</a>  to learn more
          </p>
-
-         <hr className="my-6 border mx-2" />
       </main>
    )
 }
