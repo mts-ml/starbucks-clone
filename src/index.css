@@ -7,5 +7,9 @@ input,
 textarea,
 button,
 select {
-    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+.link-underline {
+  @apply relative w-full no-underline after:absolute after:content-[''] after:bottom-[-5px] after:left-0 after:h-[1px] after:w-full after:bg-black after:origin-left;
 }
