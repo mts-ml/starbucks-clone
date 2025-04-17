@@ -6,11 +6,12 @@ export default {
   ],
   theme: {
     screens: {
-      min803: '50.1875rem', // 803px convertido pra rem
-      sm: '40rem',          // 640px
-      md: '48rem',          // 768px
-      lg: '64rem',          // 1024px
-      xl: '80rem',          // 1280px
+      min803: '50.1875rem',   // 803px
+      min1702: '106.375rem',  // 1702px
+      sm: '40rem',            // 640px
+      md: '48rem',            // 768px
+      lg: '64rem',            // 1024px
+      xl: '80rem',            // 1280px
     },
     extend: {
       fontSize: {
