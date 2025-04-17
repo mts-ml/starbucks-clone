@@ -21,7 +21,7 @@ export const Header: React.FC = () => {
 
     return (
         <header className="relative z-30 w-full shadow pb-0.5">
-            <div className='mx-auto max-w-7xl'>
+            <div className='mx-auto max-w-[91rem]'>
                 <nav aria-label='Main navigation'>
                     <div className='flex items-center justify-between my-4 mx-6 xl:mx-0'>
                         <Link to="/">
@@ -100,9 +100,9 @@ export const Header: React.FC = () => {
 
                     {toggleMenu && <div className='min803:hidden fixed z-10 inset-0 bg-black opacity-50'></div>}
 
-                    <div className='hidden min803:flex md:items-center justify-between md:m-4 xl:mx-0 xl:justify-between'>
+                    <div className='relative hidden min803:flex md:items-center justify-between md:m-4 xl:mx-0 xl:justify-between'>
                         <div className='md:flex md:items-center'>
-                            <Link to="/">
+                            <Link to="/" className='min1702:absolute min1702:left-[-85px]'>
                                 <svg
                                     className="w-[40px] md:w-[50px]"
                                     aria-hidden="true"
@@ -127,7 +127,7 @@ export const Header: React.FC = () => {
                                 </svg>
                             </Link>
 
-                            <ul className='flex ml-4 gap-4 font-bold text-sm tracking-widest cursor-pointer'>
+                            <ul className='flex min1702:ml-0 m-4 gap-4 font-bold text-sm tracking-widest cursor-pointer'>
                                 <li className='uppercase hover:text-[#08754A]'>menu</li>
                                 <li className='uppercase hover:text-[#08754A]'>rewards</li>
                                 <li className='uppercase hover:text-[#08754A]'>gift cards</li>
