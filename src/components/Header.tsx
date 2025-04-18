@@ -92,10 +92,10 @@ export const Header: React.FC = () => {
 
                     {toggleMenu && <div className='min803:hidden fixed z-10 inset-0 bg-black opacity-50'></div>}
 
-                    <div className={`relative hidden min803:flex min803:items-center justify-between md:m-4 xl:mx-0
-                    ${menuPage ? "pl-8 lg:pr-9" : ""}`}>
+                    <div className={`relative hidden min803:flex min803:items-center justify-between md:m-4
+                    ${menuPage ? "pl-[5.1rem] min1702:pl-[6.1rem] lg:pr-9" : "xl:mx-0 "}`}>
                         <div className='md:flex md:items-center'>
-                            <Link to="/" className='min1702:absolute min1702:left-[-85px]'>
+                            <Link to="/" className={`min1702:absolute min1702:left-[-85px] ${menuPage ? "absolute left-[20px] min1702:left-[20px]" : ""}`}>
                                 <img
                                     src={logo}
                                     className="w-[40px] md:w-[50px]"
