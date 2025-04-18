@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import hamburguer from '../assets/images/hamburguer.svg'
 import logo from '../assets/images/starbuck.png'
 
@@ -8,7 +8,7 @@ export const Header: React.FC = () => {
     const [toggleMenu, setToggleMenu] = useState(false)
 
     const location = useLocation()
-    const menuPage = location.pathname === "/menu/"
+    const menuPage = location.pathname === "/menu"
 
     function handleToggleMenu() {
         setToggleMenu(!toggleMenu)
@@ -21,8 +21,6 @@ export const Header: React.FC = () => {
             document.body.style.overflow = ""
         }
     }, [toggleMenu])
-
-
 
 
     return (
@@ -57,7 +55,7 @@ export const Header: React.FC = () => {
                         <hr className='absolute mt-[1.1rem] md:mt-[1.6rem] top-14 w-full left-0 border' />
 
                         <ul className='flex flex-col gap-6 font-medium text-[1.188rem]'>
-                            <li><Link to="menu">Menu</Link></li>
+                            <li className=''><Link to="menu">Menu</Link></li>
                             <li>Rewards</li>
                             <li>Gift Cards</li>
                         </ul>
@@ -105,9 +103,32 @@ export const Header: React.FC = () => {
                             </Link>
 
                             <ul className='flex min1702:ml-0 m-4 gap-4 font-bold text-sm tracking-widest cursor-pointer'>
-                                <li className='uppercase hover:text-[#08754A]'>menu</li>
-                                <li className='uppercase hover:text-[#08754A]'>rewards</li>
-                                <li className='uppercase hover:text-[#08754A]'>gift cards</li>
+                                <li className='uppercase hover:text-[#08754A]'>
+                                    <NavLink
+                                        to="menu"
+                                        className={({ isActive }) => isActive ? "relative w-full no-underline before:absolute before:content-[''] before:top-[48px] before:left-0 before:h-[6px] before:w-[100%] before:bg-[#00754a]" : ""}
+                                    >
+                                        menu
+                                    </NavLink>
+                                </li>
+
+                                <li className='uppercase hover:text-[#08754A]'>
+                                    <NavLink
+                                        to="rewards"
+                                        className={({ isActive }) => isActive ? "relative w-full no-underline before:absolute before:content-[''] before:top-[48px] before:left-0 before:h-[6px] before:w-[100%] before:bg-[#00754a]" : ""}
+                                    >
+                                        rewards
+                                    </NavLink>
+                                </li>
+
+                                <li className='uppercase hover:text-[#08754A]'>
+                                    <NavLink
+                                        to="gift-cards"
+                                        className={({ isActive }) => isActive ? "relative w-full no-underline before:absolute before:content-[''] before:top-[48px] before:left-0 before:h-[6px] before:w-[100%] before:bg-[#00754a]" : ""}
+                                    >
+                                        gift cards
+                                    </NavLink>
+                                </li>
                             </ul>
                         </div>
 
