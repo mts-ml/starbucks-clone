@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 
 export const Menu: React.FC = () => {
@@ -16,10 +16,13 @@ export const Menu: React.FC = () => {
         <section>
             <nav className="flex items-center md:pl-[6.188rem] bg-[#f9f9f9] h-[55px] border-b border-t border-black/20 shadow-[0_-2px_4px_rgba(0,0,0,0.05)]">
                 <ul className="flex gap-8 m-4 text-[0.813rem] font-medium">
-                    <li
-                        onClick={() => handleSelectedOption(0)}
-                    >
-                        <Link to="." className={`relative w-full no-underline before:absolute before:content-[''] before:top-[-24px] before:left-0 before:h-[6px] before:w-[135%] before:bg-[#00754a] ${selected === 0 ? "link-underline" : ""}`}>Menu</Link>
+                    <li>
+                        <NavLink to="."
+                            end
+                            className={({ isActive }) => `${isActive ? "link-underline" : ""}`}
+                        >
+                            Menu
+                        </NavLink>
                     </li>
 
                     <li

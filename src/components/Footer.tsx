@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
+
 import { IoIosArrowDown as Arrow } from "react-icons/io";
 import spotifyIcon from '../assets/images/spotify-icon.svg'
 import fbIcon from '../assets/images/fb-icon.svg'
@@ -11,7 +13,10 @@ import xIcon from '../assets/images/x-icon.svg'
 export const Footer: React.FC = () => {
    const [itemsArray, setItemsArray] = useState<number[]>([])
 
-   const year = new Date().getFullYear();
+   const year = new Date().getFullYear()
+
+   const location = useLocation()
+   const menuPage = location.pathname === "/menu"
 
 
    function handleShowItem(index: number) {
@@ -29,7 +34,7 @@ export const Footer: React.FC = () => {
 
          <footer className="mt-10 max-w-[91rem] mx-auto">
 
-            <section className="flex mx-4 max-lg:flex-col gap-10 lg:gap-6 font-semibold">
+            <section className={`flex mx-5 max-lg:flex-col gap-10 lg:gap-6 font-semibold pb-10 border-b-[2px] border-black/10 ${menuPage ? "md:mx-[7rem]" : ""}`}>
                <div>
                   <button
                      className="flex w-full justify-between"
@@ -144,9 +149,7 @@ export const Footer: React.FC = () => {
                </div>
             </section>
 
-            <hr className="border mx-auto w-[98%] mt-12 mb-8" />
-
-            <section>
+            <section className={`mt-8 ${menuPage ? "md:mx-[6.2rem]" : "md:mx-2"}`}>
                <ul className="mx-2 mb-6 flex">
                   <li className="hover:bg-black/10 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-scale-110">
                      <a href="https://open.spotify.com/user/starbucks#login" target="_blank" rel="noopener noreferrer">
@@ -197,7 +200,7 @@ export const Footer: React.FC = () => {
                </ul>
             </section>
 
-            <p className="mx-4 mb-10 text-[0.813rem] lg:text-sm text-[#5c4f4b] font-medium">© {year} Starbucks Coffee Company. All rights reserved.</p>
+            <p className="mx-4 md:mx-[7rem] mb-10 text-[0.813rem] lg:text-sm text-[#5c4f4b] font-medium">© {year} Starbucks Coffee Company. All rights reserved.</p>
          </footer>
       </>
    )
