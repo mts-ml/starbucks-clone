@@ -25,7 +25,7 @@ export const Header: React.FC = () => {
 
     return (
         <header className="relative z-30 w-full shadow pb-0.5">
-            <div className={`${menuPage ? "" : "mx-auto max-w-[91rem]"}`}>
+            <div className={`${menuPage ? "" : "mx-auto max-w-[95rem]"}`}>
                 <nav aria-label='Main navigation'>
                     <div className='flex items-center justify-between my-4 mx-6 xl:mx-0'>
                         <Link to="/">
@@ -91,7 +91,7 @@ export const Header: React.FC = () => {
                     {toggleMenu && <div className='min803:hidden fixed z-10 inset-0 bg-black opacity-50'></div>}
 
                     <div className={`relative hidden min803:flex min803:items-center justify-between md:m-4
-                    ${menuPage ? "pl-[5.1rem] min1702:pl-[6.1rem] lg:pr-9" : "xl:mx-0 "}`}>
+                    ${menuPage ? "pl-[5.1rem] min1702:pl-[6.1rem] lg:pr-9" : ""}`}>
                         <div className='md:flex md:items-center'>
                             <Link to="/" className={`min1702:absolute min1702:left-[-85px] ${menuPage ? "absolute left-[20px] min1702:left-[20px]" : ""}`}>
                                 <img
