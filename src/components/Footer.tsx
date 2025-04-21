@@ -32,9 +32,9 @@ export const Footer: React.FC = () => {
       <>
          <hr className="my-6 border w-full" />
 
-         <footer className="mt-10 max-w-[91rem] mx-auto">
+         <footer className="mt-10 max-w-[95rem] mx-auto">
 
-            <section className={`flex mx-5 max-lg:flex-col gap-10 lg:gap-6 font-semibold pb-10 border-b-[2px] border-black/10 ${menuPage ? "md:mx-[7rem]" : ""}`}>
+            <section className={`flex mx-4 md:mx-6 lg:mx-10 max-lg:flex-col gap-10 lg:gap-6 font-semibold pb-10 border-b-[2px] border-black/10 ${menuPage ? "md:mx-[7rem]" : ""}`}>
                <div>
                   <button
                      className="flex w-full justify-between"
@@ -150,7 +150,7 @@ export const Footer: React.FC = () => {
             </section>
 
             <section className={`mt-8 ${menuPage ? "md:mx-[6.2rem]" : "md:mx-2"}`}>
-               <ul className="mx-2 mb-6 flex">
+               <ul className="mx-2 md:mx-3 lg:mx-6 mb-6 flex">
                   <li className="hover:bg-black/10 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-scale-110">
                      <a href="https://open.spotify.com/user/starbucks#login" target="_blank" rel="noopener noreferrer">
                         <img src={spotifyIcon} width={32} alt="Spotify icon" />
@@ -189,7 +189,7 @@ export const Footer: React.FC = () => {
 
                </ul>
 
-               <ul className="flex flex-col gap-4 mx-4 mb-7 text-sm lg:text-base font-medium">
+               <ul className="flex flex-col gap-4 mx-4 md:mx-6 lg:mx-8 mb-7 text-sm lg:text-base font-medium">
                   <li className="hover:cursor-pointer hover:underline w-fit">Privacy Notice</li>
                   <li className="hover:cursor-pointer hover:underline w-fit">Consumer Health Privacy Notice</li>
                   <li className="hover:cursor-pointer hover:underline w-fit">Terms of Use</li>
@@ -200,7 +200,7 @@ export const Footer: React.FC = () => {
                </ul>
             </section>
 
-            <p className="mx-4 md:mx-[7rem] mb-10 text-[0.813rem] lg:text-sm text-[#5c4f4b] font-medium">© {year} Starbucks Coffee Company. All rights reserved.</p>
+            <p className="mx-4 md:mx-[2rem] lg:mx-10 mb-10 text-[0.813rem] lg:text-sm text-[#5c4f4b] font-medium">© {year} Starbucks Coffee Company. All rights reserved.</p>
          </footer>
       </>
    )
