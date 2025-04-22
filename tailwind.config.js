@@ -8,7 +8,7 @@ export default {
     screens: {
       min803: '50.1875rem',   // 803px
       min1702: '106.375rem',  // 1702px
-      min1520: '95rem',          // 1520px
+      min1520: '95rem',       // 1520px
       sm: '40rem',            // 640px
       md: '48rem',            // 768px
       lg: '64rem',            // 1024px
