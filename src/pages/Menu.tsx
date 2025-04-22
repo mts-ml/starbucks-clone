@@ -13,7 +13,7 @@ export const Menu: React.FC = () => {
 
 
     return (
-        <section>
+        <main>
             <nav className="flex items-center md:pl-[6.188rem] bg-[#f9f9f9] h-[55px] border-b border-t border-black/20 shadow-[0_-2px_4px_rgba(0,0,0,0.05)]">
                 <ul className="flex gap-8 m-4 text-[0.813rem] font-medium">
                     <li>
@@ -183,6 +183,6 @@ export const Menu: React.FC = () => {
                     </div>
                 </section>
             </div>
-        </section>
+        </main>
     )
 }
