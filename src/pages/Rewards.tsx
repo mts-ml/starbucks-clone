@@ -1,7 +1,17 @@
+import { useState } from "react"
 import { Link } from "react-router-dom"
 
 
 export const Rewards: React.FC = () => {
+    const [selected, setSelected] = useState<number | null>(null)
+
+    function handleFavorite(index: number) {
+        if (selected !== index) {
+            setSelected(index)
+        }
+    }
+
+
     return (
         <>
             <div className="sticky top-0 z-50 bg-[#1e3932] text-white">
@@ -52,7 +62,7 @@ export const Rewards: React.FC = () => {
 
                     <p className="text-[0.875rem] md:text-base leading-5 font-medium text-center mt-5 mb-12">Earn Stars and get rewarded in a few easy steps.</p>
 
-                    <div className="md:flex gap-6 px-[64px] md:text-center mx-auto max-w-screen-min1520">
+                    <div className="md:flex gap-6 md:px-[64px] md:text-center mx-auto max-w-screen-min1520">
                         {/* 1º */}
                         <div className="px-4">
                             <div className="flex md:flex-col items-center gap-4">
@@ -108,11 +118,180 @@ export const Rewards: React.FC = () => {
                     </div>
                 </section>
 
-                <section>
-                    
+                <section className="bg-[#F1F8F5] mx-auto">
+                    <h3 className="pt-12 pb-6 font-semibold text-center text-2xl md:text-[1.75rem] leading-[2.425rem]  ">Get your favorites for free</h3>
+
+                    <ul className="flex items-center justify-evenly gap-6 mb-3">
+                        <li>
+                            <button
+                                className={`font-semibold text-[1.188rem] md:text-2xl ${selected === 0 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
+                                onClick={() => handleFavorite(0)}
+                                aria-controls="favorite1"
+                            >
+                                25
+                                <small className="text-yellow-600 text-sm md:text-base">&#9733;</small>
+                            </button>
+                        </li>
+
+                        <li>
+                            <button
+                                className={`font-semibold text-[1.188rem] md:text-2xl ${selected === 1 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
+                                onClick={() => handleFavorite(1)}
+                                aria-controls="favorite2"
+                            >
+                                100
+                                <small className="text-yellow-600 text-sm md:text-base">&#9733;</small>
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                className={`font-semibold text-[1.188rem] md:text-2xl ${selected === 2 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
+                                onClick={() => handleFavorite(2)}
+                                aria-controls="favorite3"
+                            >
+                                200
+                                <small className="text-yellow-600 text-sm md:text-base">&#9733;</small>
+                            </button>
+                        </li>
+
+                        <li>
+                            <button
+                                className={`font-semibold text-[1.188rem] md:text-2xl ${selected === 3 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
+                                onClick={() => handleFavorite(3)}
+                                aria-controls="favorite4"
+                            >
+                                300
+                                <small className="text-yellow-600 text-sm md:text-base">&#9733;</small>
+                            </button>
+                        </li>
+
+                        <li>
+                            <button
+                                className={`font-semibold text-[1.188rem] md:text-2xl ${selected === 4 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
+                                onClick={() => handleFavorite(4)}
+                                aria-controls="favorite5"
+                            >
+                                400
+                                <small className="text-yellow-600 text-sm md:text-base">&#9733;</small>
+                            </button>
+                        </li>
+                    </ul>
+
+                    {selected === 0 && (
+                        <div
+                            id="favorite1"
+                            className=" bg-[#D4E9E2] shadow-[0_-1px_5px_rgba(0,0,0,0.2)]"
+                            aria-live="polite"
+                        >
+                            <div className="max-w-3xl mx-auto md:flex items-center pb-10 pt-8">
+
+                                <img className="md:w-1/2" src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/25.png" alt="Two drinks, on the left, looks life a small cappuccino and on the right like a big one, like a latte." />
+
+                                <div className="text-center md:text-left">
+                                    <p className="text-[1.188rem] md:text-2xl font-semibold my-6 px-6">
+                                        Customize your drink
+                                    </p>
+
+                                    <p className="text-small md:text-base text-center font-medium px-7">
+                                        Make your drink just right with an extra espresso shot or a dash of your favorite syrup.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+
+                    {selected === 1 && (
+                        <div
+                            id="favorite2"
+                            className=" bg-[#D4E9E2] shadow-[0_-1px_5px_rgba(0,0,0,0.2)]"
+                            aria-live="polite"
+                        >
+                            <div className="max-w-3xl mx-auto md:flex items-center pb-10 pt-8">
+
+                                <img className="md:w-1/2" src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/100.png" alt="One cup of iced coffee on the left, one glass of looks like tea on the middle and a croissant on the right." />
+
+                                <div className="text-center md:text-left">
+                                    <p className="text-[1.188rem] md:text-2xl font-semibold my-6 px-3 px-6">
+                                        Brewed hot or iced coffee or tea, bakery item, packaged snack and more
+                                    </p>
+
+                                    <p className="text-small md:text-base font-medium px-7">
+                                        Treat yourself to an iced coffee, buttery croissant, bag of chips and more.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+
+                    {selected === 2 && (
+                        <div
+                            id="favorite3"
+                            className=" bg-[#D4E9E2] shadow-[0_-1px_5px_rgba(0,0,0,0.2)]"
+                            aria-live="polite"
+                        >
+                            <div className="max-w-3xl mx-auto md:flex items-center pb-10 pt-8">
+
+                                <img className="md:w-1/2" src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/200.png" alt="Glass of coffee with foam on top, on the left side, one glass of latte on the middle and a sandwich on the right." />
+
+                                <div className="text-center md:text-left">
+                                    <p className="text-[1.188rem] md:text-2xl font-semibold my-6 px-6">
+                                        Handcrafted drink (Cold Brew, lattes and more) or hot breakfast
+                                    </p>
+
+                                    <p className="text-small md:text-base font-medium px-6">
+                                        Turn good mornings great with a delicious handcrafted drink of your choice, breakfast sandwich or oatmeal on us.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+
+                    {selected === 3 && (
+                        <div
+                            id="favorite4"
+                            className="bg-[#D4E9E2] shadow-[0_-1px_5px_rgba(0,0,0,0.2)]"
+                            aria-live="polite"
+                        >
+                            <div className="max-w-3xl mx-auto md:flex items-center pb-10 pt-8">
+
+                                <img className="md:w-1/2" src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/300.png" alt="Sliced apple, red grapes, 3 eggs and cookies with cheese on a tray on the left and a packaging with coffee on the right side." />
+
+                                <div className="text-center md:text-left">
+                                    <p className="text-[1.188rem] md:text-2xl font-semibold text-center md:text-left my-6 px-6">
+                                        Sandwich, protein box or at-home coffee
+                                    </p>
+
+                                    <p className="text-small md:text-base font-medium px-6">
+                                        Enjoy a PM pick-me-up with a lunch sandwich, protein box or a bag of coffee—including Starbucks VIA Instant®.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+
+                    {selected === 4 && (
+                        <div
+                            id="favorite5"
+                            className=" bg-[#D4E9E2] shadow-[0_-1px_5px_rgba(0,0,0,0.2)]"
+                            aria-live="polite"
+                        >
+                            <div className="max-w-3xl mx-auto md:flex items-center pb-10 pt-8">
+
+                                <img className="md:w-1/2" src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/400.png" alt="White cup on the left and a green Stabucks cup with a straw on the right." />
+
+                                <div className="text-center md:text-left">
+                                    <p className="text-[1.188rem] md:text-2xl font-semibold my-6 px-6">
+                                        Select Starbucks® merchandise
+                                    </p>
+
+                                    <p className="text-small md:text-base font-medium px-6">
+                                        Take home a signature cup, drink tumbler or your choice of coffee merch up to $20.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    )}
                 </section>
-
-
             </main>
         </>
     )
