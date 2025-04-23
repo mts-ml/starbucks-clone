@@ -118,64 +118,66 @@ export const Rewards: React.FC = () => {
                     </div>
                 </section>
 
-                <section className="bg-[#F1F8F5] mx-auto">
-                    <h2 className="pt-12 pb-6 font-semibold text-center text-2xl md:text-[1.75rem] leading-[2.425rem]  ">Get your favorites for free</h2>
+                <section className="bg-[#F1F8F5]">
+                    <div className="mx-auto max-w-5xl">
+                        <h2 className="pt-12 pb-6 font-semibold text-center text-2xl md:text-[1.75rem] leading-[2.425rem]  ">Get your favorites for free</h2>
 
-                    <ul className="flex items-center justify-evenly gap-6 mb-3">
-                        <li>
-                            <button
-                                className={`font-semibold text-[1.188rem] md:text-2xl ${selected === 0 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
-                                onClick={() => handleFavorite(0)}
-                                aria-controls="favorite1"
-                            >
-                                25
-                                <small className="text-yellow-600 text-sm md:text-base">&#9733;</small>
-                            </button>
-                        </li>
+                        <ul className="flex items-center justify-center gap-14 mb-5">
+                            <li>
+                                <button
+                                    className={`font-semibold text-[1.188rem] md:text-2xl ${selected === 0 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
+                                    onClick={() => handleFavorite(0)}
+                                    aria-controls="favorite1"
+                                >
+                                    25
+                                    <small className="text-yellow-600 text-sm md:text-base">&#9733;</small>
+                                </button>
+                            </li>
 
-                        <li>
-                            <button
-                                className={`font-semibold text-[1.188rem] md:text-2xl ${selected === 1 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
-                                onClick={() => handleFavorite(1)}
-                                aria-controls="favorite2"
-                            >
-                                100
-                                <small className="text-yellow-600 text-sm md:text-base">&#9733;</small>
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                className={`font-semibold text-[1.188rem] md:text-2xl ${selected === 2 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
-                                onClick={() => handleFavorite(2)}
-                                aria-controls="favorite3"
-                            >
-                                200
-                                <small className="text-yellow-600 text-sm md:text-base">&#9733;</small>
-                            </button>
-                        </li>
+                            <li>
+                                <button
+                                    className={`font-semibold text-[1.188rem] md:text-2xl ${selected === 1 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
+                                    onClick={() => handleFavorite(1)}
+                                    aria-controls="favorite2"
+                                >
+                                    100
+                                    <small className="text-yellow-600 text-sm md:text-base">&#9733;</small>
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    className={`font-semibold text-[1.188rem] md:text-2xl ${selected === 2 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
+                                    onClick={() => handleFavorite(2)}
+                                    aria-controls="favorite3"
+                                >
+                                    200
+                                    <small className="text-yellow-600 text-sm md:text-base">&#9733;</small>
+                                </button>
+                            </li>
 
-                        <li>
-                            <button
-                                className={`font-semibold text-[1.188rem] md:text-2xl ${selected === 3 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
-                                onClick={() => handleFavorite(3)}
-                                aria-controls="favorite4"
-                            >
-                                300
-                                <small className="text-yellow-600 text-sm md:text-base">&#9733;</small>
-                            </button>
-                        </li>
+                            <li>
+                                <button
+                                    className={`font-semibold text-[1.188rem] md:text-2xl ${selected === 3 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
+                                    onClick={() => handleFavorite(3)}
+                                    aria-controls="favorite4"
+                                >
+                                    300
+                                    <small className="text-yellow-600 text-sm md:text-base">&#9733;</small>
+                                </button>
+                            </li>
 
-                        <li>
-                            <button
-                                className={`font-semibold text-[1.188rem] md:text-2xl ${selected === 4 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
-                                onClick={() => handleFavorite(4)}
-                                aria-controls="favorite5"
-                            >
-                                400
-                                <small className="text-yellow-600 text-sm md:text-base">&#9733;</small>
-                            </button>
-                        </li>
-                    </ul>
+                            <li>
+                                <button
+                                    className={`font-semibold text-[1.188rem] md:text-2xl ${selected === 4 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
+                                    onClick={() => handleFavorite(4)}
+                                    aria-controls="favorite5"
+                                >
+                                    400
+                                    <small className="text-yellow-600 text-sm md:text-base">&#9733;</small>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
 
                     {selected === 0 && (
                         <div
@@ -366,6 +368,127 @@ export const Rewards: React.FC = () => {
                     </div>
 
                 </section>
+
+                <section className="bg-[#f2f0eb]">
+                    <div className="mx-auto max-w-[95rem] py-12 px-4 md:px-6 lg:px-10">
+                        <h2 className="text-2xl md:text-[1.75rem] leading-[2.075rem] font-semibold text-center pt-6 pb-4">Cash or card, you earn Stars</h2>
+
+                        <p className="text-sm md:text-base font-medium text-center mb-16">
+                            No matter how you pay, you can earn Stars with your morning coffee. Those Stars add up to (really delicious) Rewards.
+                        </p>
+
+                        {/* 1ª */}
+                        <div className="md:grid lg:grid-cols-[1fr_4fr] border-b pb-4 border-black/10">
+                            <div>
+                                <p className="text-[1.188rem] leading-6 md:text-2xl font-semibold">
+                                    1 &#9733; per dollar
+                                </p>
+
+                                <p className="text-sm md:text-base font-medium mb-8">
+                                    Pay as you go
+                                </p>
+                            </div>
+
+                            <div className="md:grid md:grid-cols-2">
+                                <div className="flex gap-4 max-md:mb-8">
+
+                                    <img
+                                        className="md:self-start"
+                                        src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/1A.png"
+                                        alt="Card swiping machine with a card insert in it and QRcode appearing on screen."
+                                        width={112}
+                                    />
+
+                                    <div className="flex flex-col gap-6">
+                                        <p className="md:text-[1.188rem] leading-6 font-semibold">
+                                            Scan and pay separately
+                                        </p>
+
+                                        <p className="text-sm md:text-base font-medium">
+                                            Use cash or credit/debit card at the register.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="flex gap-4 mb-8">
+                                    <img
+                                        className="md:self-start"
+                                        src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/1B.png"
+                                        alt="Card swiping machine with a card appearing on screen."
+                                        width={112}
+                                    />
+
+                                    <div className="flex flex-col gap-6">
+                                        <p className="md:text-[1.188re6] leading-6 font-semibold">
+                                            Save payment in the app
+                                        </p>
+
+                                        <p className="text-sm md:text-base font-medium">
+                                            Check-out faster by saving a credit/debit card or PayPal to your account. You’ll be able to order ahead or scan and pay at the register in one step.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* 2ª */}
+                        <div className="md: grid lg:grid-cols-[1fr_4fr] pt-[2.5rem]">
+                            <div>
+                                <p className="text-[1.188rem] leading-6 md:text-2xl font-semibold">
+                                    2 &#9733; per dollar
+                                </p>
+
+                                <p className="text-sm md:text-base font-medium mb-8">
+                                    Add funds in the app
+                                </p>
+                            </div>
+
+                            <div className="md:grid md:grid-cols-2">
+                                <div className="flex gap-4 mb-8">
+                                    <img
+                                        className="md:self-start"
+                                        src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/2A.png"
+                                        alt="Card simbolizing a money bill."
+                                        width={112}
+                                    />
+
+                                    <div className="flex flex-col gap-6">
+                                        <p className="md:text-[1.188rem] leading-6 font-semibold">
+
+                                            Preload
+                                        </p>
+
+                                        <p className="text-sm md:text-base font-medium">
+                                            To save time and earn Stars twice as fast, add money to your digital Starbucks Card using any payment option. Scan and pay in one step or order ahead in the app.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="flex gap-4 mb-8">
+                                    <img
+                                        className="md:self-start"
+                                        src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/2B.png"
+                                        alt="Card in green and white color."
+                                        width={112}
+                                    />
+
+                                    <div className="flex flex-col gap-6">
+                                        <p className="md:text-[1.188re6] leading-6 font-semibold">
+                                            Register your gift card
+                                        </p>
+
+                                        <p className="text-sm md:text-base font-medium">
+                                            Then use it to pay through the app. You can even consolidate balances from multiple cards in one place.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                
             </main>
         </>
     )
