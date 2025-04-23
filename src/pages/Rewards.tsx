@@ -604,12 +604,12 @@ export const Rewards: React.FC = () => {
 
                 </section>
 
-                <section className="mt-8 py-8 px-4 md:py-16 md:px-6 md:ml-32">
+                <section className="max-w-5xl mx-auto mt-8 py-8 px-4 md:py-16 md:px-32">
                     <h2 className="font-semibold text-2xl md:text-[1.75rem] md:leading-[2.425rem] pb-4">
                         Questions?
                     </h2>
 
-                    <p className="text-sm md:text-base font-medium pb-4 max-w-[37ch]">
+                    <p className="text-sm md:text-base font-medium pb-4 md:max-w-[37ch] xl:max-w-[73ch]">
                         We want to help in any way we can. You can ask your barista anytime or we’ve answered the most commonly asked terms <span className="cursor-pointer text-[#006441] underline hover:no-underline">right over here
                             <svg
                                 aria-hidden="true"
