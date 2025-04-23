@@ -488,7 +488,88 @@ export const Rewards: React.FC = () => {
 
                 </section>
 
-                
+                <section className="relative z-10 bg-[#d4e9e2] py-2 px-4 md:p-8 md:bg-[url('https://www.starbucks.com/app-assets/844262945b2a8b8cfb29.png')] bg-cover">
+                    <div className="relative z-20 md:py-[40px] md:px-6 md:bg-[#d4e9e2]">
+                        <h2 className="text-2xl md:text-[1.75rem] md:leading-[2.425] font-semibold text-center pt-4">
+                            Keep the Rewards Coming
+                        </h2>
+
+                        <p className="text-sm md:text-base font-medium text-center pt-4">
+                            The Rewards don't stop at your morning coffee. Join Starbucks® Rewards and unlock perks from our partners, all while earning more Stars.
+                        </p>
+
+                        <ul className="max-w-[100.125rem] mx-auto md:grid md:grid-cols-3 md:gap-6 py-8 px-[5px]">
+                            {/* 1º */}
+                            <li className="flex md:flex-col items-center my-[1.25rem] mx-[2px]">
+                                <img
+                                    className="md:w-[190px]"
+                                    src="https://www.starbucks.com/weblx/images/rewards/loyalty-partnerships/delta-skymiles.png"
+                                    alt="Delta Skymiles logo."
+                                    width={112}
+                                />
+
+                                <p className="max-md:pl-4 md:pt-6 font-medium text-sm md:text-base md:text-center">
+                                    <span className="md:block">
+                                        <a href="https://www.deltastarbucks.com/content/starbucks/en/overview.html?mkcpgn=dipd-sbux7042"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="underline hover:no-underline text-[#22625b]"
+                                        >Link your Delta SkyMiles® </a>
+                                    </span>
+                                    and Starbucks® Rewards accounts to earn miles on Starbucks Card reloads of $25 or more, plus Double Stars on travel days.
+                                    <a href="#regulation1" target="_self" rel="noopener noreferrer"><sup><small className="text-[8x] md:text-[9px]">1</small></sup></a>
+                                </p>
+                            </li>
+
+                            {/* 2º */}
+                            <li className="flex md:flex-col items-center my-[1.25rem] mx-[2px]">
+                                <img
+                                    className="md:w-[190px]"
+                                    src="https://www.starbucks.com/weblx/images/rewards/loyalty-partnerships/bank-of-america.png"
+                                    alt="Bank of America logo."
+                                    width={112}
+                                />
+
+                                <p className="max-md:pl-4 md:pt-6 font-medium text-sm md:text-base md:text-center">
+                                    <span className="md:block">
+                                        <a href="https://promotions.bankofamerica.com/starbucks?cm_mmc=ESZ-EnterpriseSales-_-Cobrand_Site-_-ES35LT0004_StarbucksRewardsModuleBofA_SRModuleBofA-_-StarbucksPartnerMktg"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="underline hover:no-underline text-[#22625b]"
+                                        >Link your Bank of America® </a>
+                                    </span>
+                                    eligible card and Starbucks® Rewards account to earn 2% Cash Back and Bonus Stars on qualifying Starbucks in-app purchases.
+                                    <a href="#regulation2" target="_self" rel="noopener noreferrer"><sup><small className="text-[8x] md:text-[9px]">2</small></sup></a>
+                                </p>
+                            </li>
+
+                            {/* 3º */}
+                            <li className="flex md:flex-col items-center my-[1.25rem] mx-[2px]">
+                                <img
+                                    className="md:w-[190px]"
+                                    src="https://www.starbucks.com/weblx/images/rewards/loyalty-partnerships/marriott-bonvoy/marriott-logo.png"
+                                    alt="Marriott Bonvoy logo."
+                                    width={112}
+                                />
+
+                                <p className="max-md:pl-4 md:pt-6 font-medium text-sm md:text-base md:text-center">
+                                    <span className="md:block">
+                                        <a href="https://www.starbucks.com/rewards/partnerships/marriottbonvoy"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="underline hover:no-underline text-[#22625b]"
+                                        >Link your Marriott Bonvoy® </a>
+                                    </span>
+                                    and Starbucks® Rewards accounts to earn Double Stars during eligible stays, points during any Marriott Bonvoy Week and more.
+                                    <a href="#regulation3" target="_self" rel="noopener noreferrer"><sup><small className="text-[8x] md:text-[9px]">3</small></sup></a>
+                                </p>
+                            </li>
+                        </ul>
+
+                        <button className="block bg-[#00754a] text-white py-[7px] mb-[8px] font-semibold px-4 text-sm md:text-base rounded-3xl mx-auto hover:bg-[#21815e] transition-colors duration-300 ease-in-out">Join Starbucks® Rewards</button>
+                    </div>
+
+                </section>
             </main>
         </>
     )
