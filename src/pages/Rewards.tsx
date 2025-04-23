@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 
 export const Rewards: React.FC = () => {
-    const [selected, setSelected] = useState<number | null>(null)
+    const [selected, setSelected] = useState<number>(0)
 
     function handleFavorite(index: number) {
         if (selected !== index) {
@@ -119,7 +119,7 @@ export const Rewards: React.FC = () => {
                 </section>
 
                 <section className="bg-[#F1F8F5] mx-auto">
-                    <h3 className="pt-12 pb-6 font-semibold text-center text-2xl md:text-[1.75rem] leading-[2.425rem]  ">Get your favorites for free</h3>
+                    <h2 className="pt-12 pb-6 font-semibold text-center text-2xl md:text-[1.75rem] leading-[2.425rem]  ">Get your favorites for free</h2>
 
                     <ul className="flex items-center justify-evenly gap-6 mb-3">
                         <li>
@@ -291,6 +291,80 @@ export const Rewards: React.FC = () => {
                             </div>
                         </div>
                     )}
+                </section>
+
+                <section className="mt-14">
+                    <h2 className="text-2xl md:text-[1.75rem] leading-[2.075rem] text-center font-semibold">Endless Extras</h2>
+
+                    <p className="text-sm md:text-base text-center my-5 font-medium px-4 md:max-w-[53ch] md:mx-auto">
+                        Joining Starbucks® Rewards means unlocking access to benefits like quick and easy ordering, tasty Rewards and—yes, free coffee.
+                    </p>
+
+                    <div className="md:grid md:grid-cols-3 max-w-[95rem] mx-auto">
+                        {/* 1ª */}
+                        <div className="flex md:flex-col gap-4 items-start md:items-center mx-4 my-12">
+                            <img
+                                src="https://www.starbucks.com/weblx/images/rewards/benefits/1-fun-freebies.jpg"
+                                alt="Drink and a hamburguer."
+                                width={112}
+                            />
+
+                            <div className="flex flex-col md:text-center gap-5">
+                                <h3 className="font-semibold md:text-[1.188rem] leading-6">Fun freebies</h3>
+
+                                <p className="font-medium text-sm md:text-base md:max-w-[20ch] max-md:mr-6">
+                                    Not only can you earn free food, drinks and more, look forward to a birthday treat on us.
+                                </p>
+
+                                <span className="cursor-pointer underline max-md:self-start text-[#396c41] font-semibold hover:no-underline">
+                                    Learn more
+                                </span>
+                            </div>
+                        </div>
+
+                        {/* 2ª */}
+                        <div className="flex md:flex-col gap-4 items-start md:items-center mx-4 my-12">
+                            <img
+                                src="https://www.starbucks.com/weblx/images/rewards/benefits/2-order-and-pay-ahead.jpg"
+                                alt="A hand using an eletronic that looks like an iPad."
+                                width={112}
+                            />
+
+                            <div className="flex flex-col md:text-center gap-6">
+                                <h3 className="font-semibold md:text-[1.188rem] leading-6">Order & pay ahead</h3>
+
+                                <p className="font-medium text-sm md:text-base md:max-w-[20ch] max-md:mr-6">
+                                    Master the art of ordering ahead with saved favorites and payment methods
+                                </p>
+
+                                <span className="cursor-pointer underline max-md:self-start text-[#396c41] font-semibold hover:no-underline">
+                                    Learn more
+                                </span>
+                            </div>
+                        </div>
+
+                        {/* 3ª */}
+                        <div className="flex md:flex-col gap-4 items-start md:items-center mx-4 my-12">
+                            <img
+                                src="https://www.starbucks.com/weblx/images/rewards/benefits/3-get-to-free-faster.jpg"
+                                alt="Drink in a yellow cup with a lot of foam on top and a star looking like a candle."
+                                width={112}
+                            />
+
+                            <div className="flex flex-col md:text-center gap-6">
+                                <h3 className="font-semibold md:text-[1.188rem] leading-6">Get to free faster</h3>
+
+                                <p className="font-medium text-sm md:text-base md:max-w-[20ch] max-md:mr-6">
+                                    Earn Stars even quicker with Bonus Star challenges, Double Star Days and exciting games.
+                                </p>
+
+                                <span className="cursor-pointer underline max-md:self-start text-[#396c41] font-semibold hover:no-underline">
+                                    Learn more
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
                 </section>
             </main>
         </>
