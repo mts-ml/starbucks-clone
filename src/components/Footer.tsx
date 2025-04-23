@@ -30,9 +30,9 @@ export const Footer: React.FC = () => {
 
    return (
       <>
-         <hr className="my-6 border w-full" />
+         <hr className="mt-10 border w-full" />
 
-         <footer className="mt-10 max-w-[95rem] mx-auto">
+         <footer className="mt-10 mb-[146px] max-w-[95rem] mx-auto">
 
             <section className={`flex mx-4 md:mx-6 lg:mx-10 max-lg:flex-col gap-10 lg:gap-6 font-semibold pb-10 border-b-[2px] border-black/10 ${menuPage ? "md:mx-[7rem]" : ""}`}>
                <div>
