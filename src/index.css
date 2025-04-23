@@ -11,7 +11,7 @@ select {
 }
 
 .link-underline {
-  @apply relative w-full no-underline after:absolute after:content-[''] after:bottom-[-5px] after:left-0 after:h-[1px] after:w-full after:bg-black after:origin-left;
+  @apply relative w-full no-underline after:absolute after:content-[''] after:bottom-[-7px] after:left-0 after:h-[1px] after:w-full after:bg-black after:origin-left;
 }
 
 .link-underline-rewards {
