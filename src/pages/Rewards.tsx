@@ -14,7 +14,7 @@ export const Rewards: React.FC = () => {
 
     return (
         <>
-            <div className="sticky top-0 z-50 bg-[#1e3932] text-white">
+            <div className="sticky top-0 z-20 bg-[#1e3932] text-white">
                 <div className="mx-auto max-w-[95rem] flex justify-between items-center h-12 px-6 text-[0.813rem] md:text-sm">
                     <p className="font-semibold uppercase md:mx-16 min1520:mx-0">Starbucks® Rewards</p>
 
@@ -604,12 +604,12 @@ export const Rewards: React.FC = () => {
 
                 </section>
 
-                <section className="mt-8 py-8 px-4 md:py-16 md:px-6 md:ml-32">
+                <section className="max-w-5xl mx-auto mt-8 py-8 px-4 md:py-16 md:px-32">
                     <h2 className="font-semibold text-2xl md:text-[1.75rem] md:leading-[2.425rem] pb-4">
                         Questions?
                     </h2>
 
-                    <p className="text-sm md:text-base font-medium pb-4 max-w-[37ch]">
+                    <p className="text-sm md:text-base font-medium pb-4 md:max-w-[37ch] xl:max-w-[73ch]">
                         We want to help in any way we can. You can ask your barista anytime or we’ve answered the most commonly asked terms <span className="cursor-pointer text-[#006441] underline hover:no-underline">right over here
                             <svg
                                 aria-hidden="true"
@@ -625,6 +625,136 @@ export const Rewards: React.FC = () => {
                         </span>
                         .
                     </p>
+                </section>
+
+                <section className="bg-[#f9f9f9]">
+                    <div className="max-w-screen-min1520 mx-auto py-8 px-4 text-[0.813rem] max-md:leading-[1.219rem] md:text-sm font-medium">
+                        <p className="pb-2">
+                            At participating stores. Restrictions apply.
+                        </p>
+
+                        <p className="pb-2" id="regulation1">
+                            <small className="text-[0.563rem] md:text-[0.625rem]"><sup>1</sup></small>Excludes taxes and gratuities. At participating stores. Some restrictions apply. Flights purchased close to departure may not earn double Stars. Stars and miles may not be earned on purchases of alcohol, Starbucks Cards and Starbucks Card reloads. For details, visit <span className="cursor-pointer underline hover:no-underline text-[#006241]">deltastarbucks.com/terms</span>
+                            <svg
+                                aria-hidden="true"
+                                className="inline w-[18px] h-[18px] overflow-visible fill-[#006441] mx-[2px]"
+                                focusable="false"
+                                preserveAspectRatio="xMidYMid meet"
+                                viewBox="0 0 24 24"
+                            >
+                                <path d="M14.5003 3.30018C14.0861 3.30021 13.7503 3.63602 13.7504 4.05024C13.7504 4.46445 14.0862 4.80021 14.5004 4.80018L17.7958 4.79994L11.2981 11.2976C11.0052 11.5905 11.0052 12.0654 11.2981 12.3583C11.591 12.6512 12.0659 12.6512 12.3588 12.3583L18.8566 5.86046V8.99966C18.8566 9.41388 19.1924 9.74966 19.6066 9.74966C20.0208 9.74966 20.3566 9.41388 20.3566 8.99966V4.0498C20.3566 3.85088 20.2776 3.66011 20.1369 3.51945C19.9963 3.3788 19.8055 3.29979 19.6065 3.2998L14.5003 3.30018Z"></path>
+                                <path d="M6 3.99966H12V5.49966H6C5.72386 5.49966 5.5 5.72352 5.5 5.99966V17.9997C5.5 18.2758 5.72386 18.4997 6 18.4997H18C18.2761 18.4997 18.5 18.2758 18.5 17.9997V11.2497H20V17.9997C20 19.1042 19.1046 19.9997 18 19.9997H6C4.89543 19.9997 4 19.1042 4 17.9997V5.99966C4 4.89509 4.89543 3.99966 6 3.99966Z">
+                                </path>
+                            </svg>
+                            .↩
+                        </p>
+
+                        <p className="pb-2" id="regulation2">
+                            <small className="text-[0.563rem] md:text-[0.625rem]"><sup>2</sup></small>At participating stores only. Some restrictions apply. Linked Card members will earn 2% Cash Back on the full purchase price of every Qualifying Purchase. Extra Star offer excludes taxes and tips. Stars may not be earned on purchases of alcohol or on reloads of Starbucks Cards that are not registered. For details, visit <span className="cursor-pointer underline hover:no-underline text-[#006241]">Terms and Conditions</span>
+                            <svg
+                                aria-hidden="true"
+                                className="inline w-[18px] h-[18px] overflow-visible fill-[#006441] mx-[2px]"
+                                focusable="false"
+                                preserveAspectRatio="xMidYMid meet"
+                                viewBox="0 0 24 24"
+                            >
+                                <path d="M14.5003 3.30018C14.0861 3.30021 13.7503 3.63602 13.7504 4.05024C13.7504 4.46445 14.0862 4.80021 14.5004 4.80018L17.7958 4.79994L11.2981 11.2976C11.0052 11.5905 11.0052 12.0654 11.2981 12.3583C11.591 12.6512 12.0659 12.6512 12.3588 12.3583L18.8566 5.86046V8.99966C18.8566 9.41388 19.1924 9.74966 19.6066 9.74966C20.0208 9.74966 20.3566 9.41388 20.3566 8.99966V4.0498C20.3566 3.85088 20.2776 3.66011 20.1369 3.51945C19.9963 3.3788 19.8055 3.29979 19.6065 3.2998L14.5003 3.30018Z"></path>
+                                <path d="M6 3.99966H12V5.49966H6C5.72386 5.49966 5.5 5.72352 5.5 5.99966V17.9997C5.5 18.2758 5.72386 18.4997 6 18.4997H18C18.2761 18.4997 18.5 18.2758 18.5 17.9997V11.2497H20V17.9997C20 19.1042 19.1046 19.9997 18 19.9997H6C4.89543 19.9997 4 19.1042 4 17.9997V5.99966C4 4.89509 4.89543 3.99966 6 3.99966Z">
+                                </path>
+                            </svg>
+                            . Bank of America, N.A. Member FDIC.↩
+                        </p>
+
+                        <p className="pb-8" id="regulation3">
+                            <small className="text-[0.563rem] md:text-[0.625rem]"><sup>3</sup></small>Individuals must link loyalty program accounts to participate in offer. Members with linked accounts will earn: (a) double Starbucks Rewards Stars on Qualifying Starbucks Transactions during Eligible Stays at Participating Marriott Bonvoy Hotels, excluding stays at Homes & Villas by Marriott Bonvoy and The Ritz-Carlton Yacht Collection, and (b) earn 100 Marriott Bonvoy Points upon completion of 3 Qualifying Starbucks Transactions during Marriott Bonvoy Week. Qualifying Starbucks Transactions must be made at U.S. participating Starbucks stores and exclude purchases of alcoholic beverages, Starbucks Card eGifts and physical Starbucks gift. To earn Double Stars, the applicable stay must qualify as an Eligible Stay at a Participating Marriott Bonvoy® Hotel under offer terms and conditions. Other restrictions and exclusions apply. For full offer terms and conditions, visit <span className="cursor-pointer underline hover:no-underline text-[#006241]">Starbucks.com/MarriottBonvoy</span>
+                            <svg
+                                aria-hidden="true"
+                                className="inline w-[18px] h-[18px] overflow-visible fill-[#006441] mx-[2px]"
+                                focusable="false"
+                                preserveAspectRatio="xMidYMid meet"
+                                viewBox="0 0 24 24"
+                            >
+                                <path d="M14.5003 3.30018C14.0861 3.30021 13.7503 3.63602 13.7504 4.05024C13.7504 4.46445 14.0862 4.80021 14.5004 4.80018L17.7958 4.79994L11.2981 11.2976C11.0052 11.5905 11.0052 12.0654 11.2981 12.3583C11.591 12.6512 12.0659 12.6512 12.3588 12.3583L18.8566 5.86046V8.99966C18.8566 9.41388 19.1924 9.74966 19.6066 9.74966C20.0208 9.74966 20.3566 9.41388 20.3566 8.99966V4.0498C20.3566 3.85088 20.2776 3.66011 20.1369 3.51945C19.9963 3.3788 19.8055 3.29979 19.6065 3.2998L14.5003 3.30018Z"></path>
+                                <path d="M6 3.99966H12V5.49966H6C5.72386 5.49966 5.5 5.72352 5.5 5.99966V17.9997C5.5 18.2758 5.72386 18.4997 6 18.4997H18C18.2761 18.4997 18.5 18.2758 18.5 17.9997V11.2497H20V17.9997C20 19.1042 19.1046 19.9997 18 19.9997H6C4.89543 19.9997 4 19.1042 4 17.9997V5.99966C4 4.89509 4.89543 3.99966 6 3.99966Z">
+                                </path>
+                            </svg>
+                            . Marriott Bonvoy® and its affiliated brands and hotels are the registered trademarks and/or service marks of Marriott International, Inc. and its affiliates. Used under license from Marriott International, Inc.↩
+                        </p>
+
+                        <div className="md:grid md:grid-cols-2 gap-10 xl:gap-14">
+                            <div>
+                                <div className="text-[0.813rem] md:text-sm">
+                                    <h3 className="uppercase text-[#4a4a50] font-bold pb-4 ">Earning stars</h3>
+
+                                    <p className="pb-4">
+                                        Stars cannot be earned on purchases of alcohol, Starbucks Cards or Starbucks Card reloads.
+                                    </p>
+
+                                    <p className="pb-4">
+                                        Earn 1 Star per $1 spent when you scan your member barcode in the app, then pay with cash, credit/debit cards or mobile wallets at participating stores. You can also earn 1 Star per $1 spent when you link a payment method and pay directly through the app.
+                                    </p>
+
+                                    <p className="pb-4">
+                                        Earn 2 Stars per $1 spent when you load funds and pay with your digital Starbucks Card in the app. You can also earn 2 Stars per $1 spent when you pay in-person at a participating store with your registered physical Starbucks Card or scan your member barcode in the app, and then use any physical Starbucks Card (regardless of whether it is registered) to complete the purchase.
+                                    </p>
+                                </div>
+
+                                <div className="text-[0.813rem] md:text-sm">
+                                    <h3 className="uppercase text-[#4a4a50] font-bold pb-4 ">Benefits</h3>
+
+                                    <p className="pb-4">
+                                        Free refills available during same in-store visit only. To qualify for the Birthday Reward, you must have made at least one Star-earning transaction.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div className="text-[0.813rem] md:text-sm">
+                                    <h3 className="uppercase text-[#4a4a50] font-bold pb-4 ">Terms of Use</h3>
+
+                                    <p className="pb-4">
+                                        For full program details visit <span className="cursor-pointer underline hover:no-underline text-[#006241]">starbucks.com/rewards/terms</span>
+                                        <svg
+                                            aria-hidden="true"
+                                            className="inline w-[18px] h-[18px] overflow-visible fill-[#006441] mx-[2px]"
+                                            focusable="false"
+                                            preserveAspectRatio="xMidYMid meet"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path d="M14.5003 3.30018C14.0861 3.30021 13.7503 3.63602 13.7504 4.05024C13.7504 4.46445 14.0862 4.80021 14.5004 4.80018L17.7958 4.79994L11.2981 11.2976C11.0052 11.5905 11.0052 12.0654 11.2981 12.3583C11.591 12.6512 12.0659 12.6512 12.3588 12.3583L18.8566 5.86046V8.99966C18.8566 9.41388 19.1924 9.74966 19.6066 9.74966C20.0208 9.74966 20.3566 9.41388 20.3566 8.99966V4.0498C20.3566 3.85088 20.2776 3.66011 20.1369 3.51945C19.9963 3.3788 19.8055 3.29979 19.6065 3.2998L14.5003 3.30018Z"></path>
+                                            <path d="M6 3.99966H12V5.49966H6C5.72386 5.49966 5.5 5.72352 5.5 5.99966V17.9997C5.5 18.2758 5.72386 18.4997 6 18.4997H18C18.2761 18.4997 18.5 18.2758 18.5 17.9997V11.2497H20V17.9997C20 19.1042 19.1046 19.9997 18 19.9997H6C4.89543 19.9997 4 19.1042 4 17.9997V5.99966C4 4.89509 4.89543 3.99966 6 3.99966Z">
+                                            </path>
+                                        </svg>
+                                        .
+                                    </p>
+
+                                    <p className="pb-4">
+                                        Starbucks® Rewards benefits are available at participating Starbucks stores. Not all stores have the ability to honor Rewards at this time. Visit the  <span className="cursor-pointer underline hover:no-underline text-[#006241]">Starbucks Store Locator</span>
+                                        <svg
+                                            aria-hidden="true"
+                                            className="inline w-[18px] h-[18px] overflow-visible fill-[#006441] mx-[2px]"
+                                            focusable="false"
+                                            preserveAspectRatio="xMidYMid meet"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path d="M14.5003 3.30018C14.0861 3.30021 13.7503 3.63602 13.7504 4.05024C13.7504 4.46445 14.0862 4.80021 14.5004 4.80018L17.7958 4.79994L11.2981 11.2976C11.0052 11.5905 11.0052 12.0654 11.2981 12.3583C11.591 12.6512 12.0659 12.6512 12.3588 12.3583L18.8566 5.86046V8.99966C18.8566 9.41388 19.1924 9.74966 19.6066 9.74966C20.0208 9.74966 20.3566 9.41388 20.3566 8.99966V4.0498C20.3566 3.85088 20.2776 3.66011 20.1369 3.51945C19.9963 3.3788 19.8055 3.29979 19.6065 3.2998L14.5003 3.30018Z"></path>
+                                            <path d="M6 3.99966H12V5.49966H6C5.72386 5.49966 5.5 5.72352 5.5 5.99966V17.9997C5.5 18.2758 5.72386 18.4997 6 18.4997H18C18.2761 18.4997 18.5 18.2758 18.5 17.9997V11.2497H20V17.9997C20 19.1042 19.1046 19.9997 18 19.9997H6C4.89543 19.9997 4 19.1042 4 17.9997V5.99966C4 4.89509 4.89543 3.99966 6 3.99966Z">
+                                            </path>
+                                        </svg>
+                                        and search for locations honoring “Redeem Rewards”.
+                                    </p>
+                                </div>
+
+                                <div className="text-[0.813rem] md:text-sm ">
+                                    <h3 className="uppercase text-[#4a4a50] font-bold pb-4 ">Redeeming Rewards</h3>
+
+                                    <p>
+                                        Rewards cannot be redeemed for alcoholic beverages or multi-serve items. You pay the difference for any beverage customization over $1 and/or merchandise item over $20. Not all stores honor tiered Rewards. Select stores redeem 200 Stars for free food or drink items only.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </main>
         </>
