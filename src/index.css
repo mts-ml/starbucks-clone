@@ -15,7 +15,7 @@ select {
 }
 
 .link-underline-rewards {
-  @apply relative after:absolute after:content-[''] after:bottom-[-12px] after:-left-4 after:h-[4px] after:w-[150%] after:bg-[#00754A] after:origin-left after:transition-all after:duration-500 after:ease-in-out;
+  @apply relative after:absolute after:content-[''] after:bottom-[-19px] after:-left-4 after:h-[4px] after:w-[150%] after:bg-[#00754A] after:origin-left after:transition-all after:duration-500 after:ease-in-out;
 }
 
 .toggle-btn {
