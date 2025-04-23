@@ -151,37 +151,37 @@ export const Footer: React.FC = () => {
 
             <section className={`mt-8 ${menuPage ? "md:mx-[6.2rem]" : "md:mx-2"}`}>
                <ul className="mx-2 md:mx-3 lg:mx-6 mb-6 flex">
-                  <li className="hover:bg-black/10 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-scale-110">
+                  <li className="hover:bg-black/10 p-2 rounded-full transition-all duration-300 ease-in-out">
                      <a href="https://open.spotify.com/user/starbucks#login" target="_blank" rel="noopener noreferrer">
                         <img src={spotifyIcon} width={32} alt="Spotify icon" />
                      </a>
                   </li>
 
-                  <li className="hover:bg-black/10 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-scale-110">
+                  <li className="hover:bg-black/10 p-2 rounded-full transition-all duration-300 ease-in-out">
                      <a href="https://www.facebook.com/Starbucks/" target="_blank" rel="noopener noreferrer">
                         <img src={fbIcon} width={32} alt="Facebook icon" />
                      </a>
                   </li>
 
-                  <li className="hover:bg-black/10 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-scale-110">
+                  <li className="hover:bg-black/10 p-2 rounded-full transition-all duration-300 ease-in-out">
                      <a href="https://pinterest.com/starbucks/" target="_blank" rel="noopener noreferrer">
                         <img src={pinteresIcon} width={32} alt="Pinteres icon" />
                      </a>
                   </li>
 
-                  <li className="hover:bg-black/10 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-scale-110">
+                  <li className="hover:bg-black/10 p-2 rounded-full transition-all duration-300 ease-in-out">
                      <a href="https://www.instagram.com/starbucks/" target="_blank" rel="noopener noreferrer">
                         <img src={instagramIcon} width={32} alt="Instagram icon" />
                      </a>
                   </li>
 
-                  <li className="hover:bg-black/10 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-scale-110">
+                  <li className="hover:bg-black/10 p-2 rounded-full transition-all duration-300 ease-in-out">
                      <a href="https://www.youtube.com/starbucks" target="_blank" rel="noopener noreferrer">
                         <img src={youtubeIcon} width={32} alt="Youtube icon" />
                      </a>
                   </li>
 
-                  <li className="hover:bg-black/10 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-scale-110">
+                  <li className="hover:bg-black/10 p-2 rounded-full transition-all duration-300 ease-in-out">
                      <a href="https://x.com/starbucks/" target="_blank" rel="noopener noreferrer">
                         <img src={xIcon} width={32} alt="X icon" />
                      </a>
