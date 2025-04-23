@@ -515,6 +515,17 @@ export const Rewards: React.FC = () => {
                                             rel="noopener noreferrer"
                                             className="underline hover:no-underline text-[#22625b]"
                                         >Link your Delta SkyMiles® </a>
+                                        <svg
+                                            aria-hidden="true"
+                                            className="inline w-[18px] h-[18px] overflow-visible fill-[#006441] mx-[2px]"
+                                            focusable="false"
+                                            preserveAspectRatio="xMidYMid meet"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path d="M14.5003 3.30018C14.0861 3.30021 13.7503 3.63602 13.7504 4.05024C13.7504 4.46445 14.0862 4.80021 14.5004 4.80018L17.7958 4.79994L11.2981 11.2976C11.0052 11.5905 11.0052 12.0654 11.2981 12.3583C11.591 12.6512 12.0659 12.6512 12.3588 12.3583L18.8566 5.86046V8.99966C18.8566 9.41388 19.1924 9.74966 19.6066 9.74966C20.0208 9.74966 20.3566 9.41388 20.3566 8.99966V4.0498C20.3566 3.85088 20.2776 3.66011 20.1369 3.51945C19.9963 3.3788 19.8055 3.29979 19.6065 3.2998L14.5003 3.30018Z"></path>
+                                            <path d="M6 3.99966H12V5.49966H6C5.72386 5.49966 5.5 5.72352 5.5 5.99966V17.9997C5.5 18.2758 5.72386 18.4997 6 18.4997H18C18.2761 18.4997 18.5 18.2758 18.5 17.9997V11.2497H20V17.9997C20 19.1042 19.1046 19.9997 18 19.9997H6C4.89543 19.9997 4 19.1042 4 17.9997V5.99966C4 4.89509 4.89543 3.99966 6 3.99966Z">
+                                            </path>
+                                        </svg>
                                     </span>
                                     and Starbucks® Rewards accounts to earn miles on Starbucks Card reloads of $25 or more, plus Double Stars on travel days.
                                     <a href="#regulation1" target="_self" rel="noopener noreferrer"><sup><small className="text-[8x] md:text-[9px]">1</small></sup></a>
@@ -537,6 +548,17 @@ export const Rewards: React.FC = () => {
                                             rel="noopener noreferrer"
                                             className="underline hover:no-underline text-[#22625b]"
                                         >Link your Bank of America® </a>
+                                        <svg
+                                            aria-hidden="true"
+                                            className="inline w-[18px] h-[18px] overflow-visible fill-[#006441] mx-[2px]"
+                                            focusable="false"
+                                            preserveAspectRatio="xMidYMid meet"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path d="M14.5003 3.30018C14.0861 3.30021 13.7503 3.63602 13.7504 4.05024C13.7504 4.46445 14.0862 4.80021 14.5004 4.80018L17.7958 4.79994L11.2981 11.2976C11.0052 11.5905 11.0052 12.0654 11.2981 12.3583C11.591 12.6512 12.0659 12.6512 12.3588 12.3583L18.8566 5.86046V8.99966C18.8566 9.41388 19.1924 9.74966 19.6066 9.74966C20.0208 9.74966 20.3566 9.41388 20.3566 8.99966V4.0498C20.3566 3.85088 20.2776 3.66011 20.1369 3.51945C19.9963 3.3788 19.8055 3.29979 19.6065 3.2998L14.5003 3.30018Z"></path>
+                                            <path d="M6 3.99966H12V5.49966H6C5.72386 5.49966 5.5 5.72352 5.5 5.99966V17.9997C5.5 18.2758 5.72386 18.4997 6 18.4997H18C18.2761 18.4997 18.5 18.2758 18.5 17.9997V11.2497H20V17.9997C20 19.1042 19.1046 19.9997 18 19.9997H6C4.89543 19.9997 4 19.1042 4 17.9997V5.99966C4 4.89509 4.89543 3.99966 6 3.99966Z">
+                                            </path>
+                                        </svg>
                                     </span>
                                     eligible card and Starbucks® Rewards account to earn 2% Cash Back and Bonus Stars on qualifying Starbucks in-app purchases.
                                     <a href="#regulation2" target="_self" rel="noopener noreferrer"><sup><small className="text-[8x] md:text-[9px]">2</small></sup></a>
@@ -559,6 +581,17 @@ export const Rewards: React.FC = () => {
                                             rel="noopener noreferrer"
                                             className="underline hover:no-underline text-[#22625b]"
                                         >Link your Marriott Bonvoy® </a>
+                                        <svg
+                                            aria-hidden="true"
+                                            className="inline w-[18px] h-[18px] overflow-visible fill-[#006441] mx-[2px]"
+                                            focusable="false"
+                                            preserveAspectRatio="xMidYMid meet"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path d="M14.5003 3.30018C14.0861 3.30021 13.7503 3.63602 13.7504 4.05024C13.7504 4.46445 14.0862 4.80021 14.5004 4.80018L17.7958 4.79994L11.2981 11.2976C11.0052 11.5905 11.0052 12.0654 11.2981 12.3583C11.591 12.6512 12.0659 12.6512 12.3588 12.3583L18.8566 5.86046V8.99966C18.8566 9.41388 19.1924 9.74966 19.6066 9.74966C20.0208 9.74966 20.3566 9.41388 20.3566 8.99966V4.0498C20.3566 3.85088 20.2776 3.66011 20.1369 3.51945C19.9963 3.3788 19.8055 3.29979 19.6065 3.2998L14.5003 3.30018Z"></path>
+                                            <path d="M6 3.99966H12V5.49966H6C5.72386 5.49966 5.5 5.72352 5.5 5.99966V17.9997C5.5 18.2758 5.72386 18.4997 6 18.4997H18C18.2761 18.4997 18.5 18.2758 18.5 17.9997V11.2497H20V17.9997C20 19.1042 19.1046 19.9997 18 19.9997H6C4.89543 19.9997 4 19.1042 4 17.9997V5.99966C4 4.89509 4.89543 3.99966 6 3.99966Z">
+                                            </path>
+                                        </svg>
                                     </span>
                                     and Starbucks® Rewards accounts to earn Double Stars during eligible stays, points during any Marriott Bonvoy Week and more.
                                     <a href="#regulation3" target="_self" rel="noopener noreferrer"><sup><small className="text-[8x] md:text-[9px]">3</small></sup></a>
@@ -569,6 +602,29 @@ export const Rewards: React.FC = () => {
                         <button className="block bg-[#00754a] text-white py-[7px] mb-[8px] font-semibold px-4 text-sm md:text-base rounded-3xl mx-auto hover:bg-[#21815e] transition-colors duration-300 ease-in-out">Join Starbucks® Rewards</button>
                     </div>
 
+                </section>
+
+                <section className="mt-8 py-8 px-4 md:py-16 md:px-6 md:ml-32">
+                    <h2 className="font-semibold text-2xl md:text-[1.75rem] md:leading-[2.425rem] pb-4">
+                        Questions?
+                    </h2>
+
+                    <p className="text-sm md:text-base font-medium pb-4 max-w-[37ch]">
+                        We want to help in any way we can. You can ask your barista anytime or we’ve answered the most commonly asked terms <span className="cursor-pointer text-[#006441] underline hover:no-underline">right over here
+                            <svg
+                                aria-hidden="true"
+                                className="inline w-[18px] h-[18px] overflow-visible fill-[#006441] currentcolor;"
+                                focusable="false"
+                                preserveAspectRatio="xMidYMid meet"
+                                viewBox="0 0 24 24"
+                            >
+                                <path d="M14.5003 3.30018C14.0861 3.30021 13.7503 3.63602 13.7504 4.05024C13.7504 4.46445 14.0862 4.80021 14.5004 4.80018L17.7958 4.79994L11.2981 11.2976C11.0052 11.5905 11.0052 12.0654 11.2981 12.3583C11.591 12.6512 12.0659 12.6512 12.3588 12.3583L18.8566 5.86046V8.99966C18.8566 9.41388 19.1924 9.74966 19.6066 9.74966C20.0208 9.74966 20.3566 9.41388 20.3566 8.99966V4.0498C20.3566 3.85088 20.2776 3.66011 20.1369 3.51945C19.9963 3.3788 19.8055 3.29979 19.6065 3.2998L14.5003 3.30018Z"></path>
+                                <path d="M6 3.99966H12V5.49966H6C5.72386 5.49966 5.5 5.72352 5.5 5.99966V17.9997C5.5 18.2758 5.72386 18.4997 6 18.4997H18C18.2761 18.4997 18.5 18.2758 18.5 17.9997V11.2497H20V17.9997C20 19.1042 19.1046 19.9997 18 19.9997H6C4.89543 19.9997 4 19.1042 4 17.9997V5.99966C4 4.89509 4.89543 3.99966 6 3.99966Z">
+                                </path>
+                            </svg>
+                        </span>
+                        .
+                    </p>
                 </section>
             </main>
         </>
