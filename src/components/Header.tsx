@@ -94,9 +94,10 @@ export const Header: React.FC = () => {
                         </div>
 
                         {/* HEADER ON LARGE SCREEN */}
-                        <div className={`relative hidden min803:flex min803:items-center justify-between h-[83px] lg:h-[99px] px-6 lg:px-10 ${menuPage ? "pl-[5.1rem] min1702:pl-[6.1rem] lg:pr-9" : ""}`}>
+                        <div className={`relative hidden min803:flex min803:items-center justify-between h-[83px] lg:h-[99px] px-6 lg:px-10 ${menuPage ? "lg:ml-[4.2rem]" : ""}`}>
+
                             <div className='md:flex md:items-center'>
-                                <Link to="/" className={`min1702:absolute min1702:left-[-50px] ${menuPage ? "absolute left-[20px] min1702:left-[20px]" : ""}`}>
+                                <Link to="/" className={`min1702:absolute min1702:left-[-50px] ${menuPage ? "lg:absolute left-[-20px] min1702:left-[-20px]" : ""}`}>
                                     <img
                                         src={logo}
                                         className="w-[40px] md:w-[50px]"
@@ -105,29 +106,29 @@ export const Header: React.FC = () => {
                                     />
                                 </Link>
 
-                                <ul className='flex min1702:ml-0 m-4 gap-4 font-bold text-sm tracking-widest cursor-pointer'>
-                                    <li className='uppercase hover:text-[#08754A]'>
+                                <ul className='flex min1702:ml-0 font-bold text-sm tracking-widest cursor-pointer'>
+                                    <li className='ml-6 uppercase hover:text-[#08754A]'>
                                         <NavLink
                                             to="menu"
-                                            className={({ isActive }) => isActive ? "relative w-full no-underline before:absolute before:content-[''] before:top-[48px] before:left-0 before:h-[6px] before:w-[100%] before:bg-[#00754a]" : ""}
+                                            className={({ isActive }) => isActive ? "relative w-full no-underline before:absolute before:content-[''] before:top-[45px] lg:before:top-[52px] before:left-0 before:h-[6px] before:w-[100%] before:bg-[#00754a]" : ""}
                                         >
                                             menu
                                         </NavLink>
                                     </li>
 
-                                    <li className='uppercase hover:text-[#08754A]'>
+                                    <li className='ml-6 uppercase hover:text-[#08754A]'>
                                         <NavLink
                                             to="rewards"
-                                            className={({ isActive }) => isActive ? "relative w-full no-underline before:absolute before:content-[''] before:top-[48px] before:left-0 before:h-[6px] before:w-[100%] before:bg-[#00754a]" : ""}
+                                            className={({ isActive }) => isActive ? "relative w-full no-underline before:absolute before:content-[''] before:top-[45px] lg:before:top-[52px] before:left-0 before:h-[6px] before:w-[100%] before:bg-[#00754a]" : ""}
                                         >
                                             rewards
                                         </NavLink>
                                     </li>
 
-                                    <li className='uppercase hover:text-[#08754A]'>
+                                    <li className='ml-6 uppercase hover:text-[#08754A]'>
                                         <NavLink
                                             to="gift-cards"
-                                            className={({ isActive }) => isActive ? "relative w-full no-underline before:absolute before:content-[''] before:top-[48px] before:left-0 before:h-[6px] before:w-[100%] before:bg-[#00754a]" : ""}
+                                            className={({ isActive }) => isActive ? "relative w-full no-underline before:absolute before:content-[''] before:top-[45px] lg:before:top-[52px] before:left-0 before:h-[6px] before:w-[100%] before:bg-[#00754a]" : ""}
                                         >
                                             gift cards
                                         </NavLink>
