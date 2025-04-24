@@ -39,8 +39,8 @@ export const GiftCards: React.FC = () => {
         if (!carousel) return
 
         function handleScroll() {
-            if (carouselRef.current) {
-                const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current
+            if (carousel) {
+                const { scrollLeft, scrollWidth, clientWidth } = carousel
 
                 setIsAtEnd(scrollLeft + clientWidth >= scrollWidth - 1)
                 setIsAtStart(scrollLeft <= 10)
@@ -48,9 +48,15 @@ export const GiftCards: React.FC = () => {
         }
         handleScroll()
 
+        function handleResize() {
+            handleScroll()
+        }
+
         carousel.addEventListener("scroll", handleScroll)
+        window.addEventListener("resize", handleResize)
         return () => {
             carousel.removeEventListener("scroll", handleScroll)
+            window.removeEventListener("resize", handleResize)
         }
     }, [])
 
@@ -60,23 +66,24 @@ export const GiftCards: React.FC = () => {
             <h1 className="text-[1.75rem] leading-[2.256rem] md:text-4xl font-bold md:pt-14 px-4 pt-2 md:pr-6 md:pl-[6.188rem] lg:pl-[8.188rem] lg:pr-10">Gift cards</h1>
 
             <section className="pt-4">
-                <div className="flex items-center justify-between px-4 pt-2 md:pr-6 md:pl-[6.188rem] lg:pl-[8.188rem] lg:pr-10">
+                <div className="relative flex items-center justify-between px-4 pt-2 md:pr-6 md:pl-[6.188rem] lg:pl-[8.188rem] lg:pr-10">
                     <h2 className="uppercase text-[0.813rem] md:text-base font-bold tracking-wider">Featured</h2>
 
                     <span className="py-[7px] px-4 text-sm md:text-base text-[#00754a] font-semibold">See all</span>
                 </div>
 
-                <div ref={carouselRef} className="hide-scrollbar relative z-40 flex pb-4 pr-16 overflow-x-auto scroll-smooth px-4 pt-2 md:pr-6 md:pl-[6.188rem] lg:pl-[8.188rem] lg:pr-10">
+                <div ref={carouselRef} className="hide-scrollbar z-40 flex pb-4 pr-16 overflow-x-auto scroll-smooth px-4 pt-2 md:pr-6 md:pl-[6.188rem] lg:pl-[8.188rem] lg:pr-10">
+                    <div className="absolute right-0 top-[180px] md:top-[240px] lg:top-[270px] h-24 md:h-[140px] lg:h-[180px] xl:h-[200px] min1702:h-[300px] w-16 md:w-20 bg-white/80 z-40" />
                     {!isAtEnd && <button
-                        className="fixed z-50 top-[14rem] md:top-[19.063rem] right-[25px] rounded-full bg-white border p-[12px] cursor-pointer"
-                        onClick={(event) => handleCarouselRightClick(event)}
+                        className="absolute z-50 top-[230px] md:top-[300px] lg:top-[355px] min1702:top-[410px]  -translate-y-1/2 right-7 md:right-10 lg:right-14 rounded-full bg-white border p-3 cursor-pointer"
+                        onClick={handleCarouselRightClick}
                     >
                         <Angle />
                     </button>}
 
                     {!isAtStart && <button
-                        className="fixed z-50 top-[14rem] md:top-[19.063rem] left-[15px] rounded-full bg-white border p-[12px] cursor-pointer"
-                        onClick={(event) => handleCarouselLeftClick(event)}
+                        className="absolute z-50 top-[230px] md:top-[300px] lg:top-[355px] min1702:top-[410px] -translate-y-1/2 left-4 lg:left-[130px] xl:left-[138px] rounded-full bg-white border p-3 cursor-pointer"
+                        onClick={handleCarouselLeftClick}
                     >
                         <Angle className="rotate-180" />
                     </button>}
@@ -196,6 +203,15 @@ export const GiftCards: React.FC = () => {
                 </div>
             </section>
 
+            <div className="px-4">
+                <section className="pt-1 pb-2">
+                    <h2 className="uppercase text-[0.813rem] md:text-sm font-bold">Mother's day | 5/12</h2>
+
+                    <div>
+
+                    </div>
+                </section>
+            </div>
         </main>
     )
 }
