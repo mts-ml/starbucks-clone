@@ -94,7 +94,7 @@ export const Header: React.FC = () => {
                         </div>
 
                         {/* HEADER ON LARGE SCREEN */}
-                        <div className={`relative hidden min803:flex min803:items-center justify-between h-[83px] lg:h-[99px] px-6 lg:px-10 ${menuPage ? "lg:ml-[4.2rem]" : ""}`}>
+                        <div className={`relative hidden min803:flex min803:items-center justify-between h-[83px] lg:h-[99px] px-6 ${menuPage ? "lg:ml-[4.2rem] lg:px-10" : "lg:px-8"}`}>
 
                             <div className='md:flex md:items-center'>
                                 <Link to="/" className={`min1702:absolute min1702:left-[-50px] ${menuPage ? "lg:absolute left-[-20px] min1702:left-[-20px]" : ""}`}>
@@ -107,7 +107,7 @@ export const Header: React.FC = () => {
                                 </Link>
 
                                 <ul className='flex min1702:ml-0 font-bold text-sm tracking-widest cursor-pointer'>
-                                    <li className='ml-6 uppercase hover:text-[#08754A]'>
+                                    <li className={`ml-6 uppercase hover:text-[#08754A] ${menuPage ? "" : "min1702:ml-0"}`}>
                                         <NavLink
                                             to="menu"
                                             className={({ isActive }) => isActive ? "relative w-full no-underline before:absolute before:content-[''] before:top-[45px] lg:before:top-[52px] before:left-0 before:h-[6px] before:w-[100%] before:bg-[#00754a]" : ""}

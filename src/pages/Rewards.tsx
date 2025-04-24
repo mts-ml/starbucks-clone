@@ -15,8 +15,8 @@ export const Rewards: React.FC = () => {
     return (
         <>
             <div className="sticky top-0 z-20 bg-[#1e3932] text-white">
-                <div className="mx-auto max-w-[95rem] flex justify-between items-center h-12 px-6 text-[0.813rem] md:text-sm">
-                    <p className="font-semibold uppercase md:mx-16 min1520:mx-0">Starbucks® Rewards</p>
+                <div className="mx-auto max-w-[95rem] flex justify-between items-center h-[3.125rem] px-4 md:pr-6 md:pl-[6.188rem] lg:pr-10 lg:pl-[6.9rem] text-[0.813rem] md:text-sm min1520:px-[2.2rem]">
+                    <p className="font-semibold uppercase min1520:mx-0">Starbucks® Rewards</p>
 
                     <button className="md:hidden border rounded-full px-4 py-1 font-semibold">Join in the app</button>
                 </div>
