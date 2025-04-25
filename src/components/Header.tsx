@@ -8,6 +8,7 @@ export const Header: React.FC = () => {
 
     const location = useLocation()
     const menuPage = location.pathname === "/menu"
+    const giftCardsPage = location.pathname === "/gift-cards"
 
     function handleToggleMenu() {
         setToggleMenu(!toggleMenu)
@@ -29,7 +30,7 @@ export const Header: React.FC = () => {
     return (
         <>
             <header className="relative z-30 w-full shadow">
-                <div className={`${menuPage ? "" : "mx-auto max-w-[95rem]"}`}>
+                <div className={`${menuPage ? "" : "mx-auto max-w-[95rem]"} ${giftCardsPage ? "mx-0 max-w-full" : ""}`}>
                     <nav aria-label='Main navigation'>
 
                         <div className='relative min803:hidden z-50 h-[72px] px-4 md:px-6 flex items-center justify-between xl:mx-0'>
@@ -43,7 +44,7 @@ export const Header: React.FC = () => {
                             </Link>
 
                             {/* HAMBURGUER ITEM */}
-                            <div className='px-[7px] py-[2px]  hover:bg-black/10 hover:rounded-full hover:shadow-sm transition-all duration-500 ease-out'>
+                            <div className='px-[7px] py-[2px] hover:bg-black/10 hover:rounded-full hover:shadow-sm transition-all duration-500 ease-out'>
                                 <button
                                     className={`relative w-6 h-6 min803:hidden ${toggleMenu ? "toggle-btn" : ""}`}
                                     type="button"
@@ -94,10 +95,10 @@ export const Header: React.FC = () => {
                         </div>
 
                         {/* HEADER ON LARGE SCREEN */}
-                        <div className={`relative hidden min803:flex min803:items-center justify-between h-[83px] lg:h-[99px] px-6 ${menuPage ? "lg:ml-[4.2rem] lg:px-10" : "lg:px-8"}`}>
+                        <div className={`relative hidden min803:flex min803:items-center justify-between h-[83px] lg:h-[99px] px-6 ${menuPage ? "lg:ml-[4.2rem] lg:px-10" : "lg:px-8"} ${giftCardsPage ? "md:pl-[6.188rem] lg:pr-10 lg:pl-[8.188rem]" : ""} `}>
 
                             <div className='md:flex md:items-center'>
-                                <Link to="/" className={`min1702:absolute min1702:left-[-50px] ${menuPage ? "lg:absolute left-[-20px] min1702:left-[-20px]" : ""}`}>
+                                <Link to="/" className={`${giftCardsPage ? "md:absolute left-[25px] lg:left-[40px]" : "min1702:absolute min1702:left-[-55px]"} ${menuPage ? "lg:absolute left-[-30px] min1702:left-[-30px]" : ""}`}>
                                     <img
                                         src={logo}
                                         className="w-[40px] md:w-[50px]"
@@ -107,7 +108,7 @@ export const Header: React.FC = () => {
                                 </Link>
 
                                 <ul className='flex min1702:ml-0 font-bold text-sm tracking-widest cursor-pointer'>
-                                    <li className={`ml-6 uppercase hover:text-[#08754A] ${menuPage ? "" : "min1702:ml-0"}`}>
+                                    <li className={`ml-6 uppercase hover:text-[#08754A] ${menuPage ? "" : "min1702:ml-0"} ${giftCardsPage ? "md:ml-0" : ""}`}>
                                         <NavLink
                                             to="menu"
                                             className={({ isActive }) => isActive ? "relative w-full no-underline before:absolute before:content-[''] before:top-[45px] lg:before:top-[52px] before:left-0 before:h-[6px] before:w-[100%] before:bg-[#00754a]" : ""}

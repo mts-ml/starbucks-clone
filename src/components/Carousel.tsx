@@ -57,7 +57,7 @@ export const Carousel: React.FC<CarouselProps> = ( {children, bgWidth = "w-16"} 
             {/* BACKGROUND WITH OPACITY */}
             <div className={`absolute right-0 top-0 h-full ${bgWidth} bg-white/80 z-40`} />
 
-            <div ref={carouselRef} className="hide-scrollbar z-40 flex pb-4 pr-16 overflow-x-auto scroll-smooth px-4 pt-2 md:pl-[6.188rem] lg:pl-[8.188rem]">
+            <div ref={carouselRef} className="hide-scrollbar z-40 flex pb-4 pr-16 overflow-x-auto scroll-smooth px-4 pt-2 md:pt-6 md:pl-[6.188rem] lg:pl-[8.188rem]">
                 {children}
             </div>
 

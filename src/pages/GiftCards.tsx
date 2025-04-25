@@ -6,7 +6,7 @@ export const GiftCards: React.FC = () => {
             <h1 className="text-[1.75rem] leading-[2.256rem] md:text-4xl font-bold md:pt-14 px-4 pt-2 md:pr-6 md:pl-[6.188rem] lg:pl-[8.188rem] lg:pr-10">Gift cards</h1>
 
             <section className="pt-4">
-                <div className="flex items-center justify-between px-4 pt-2 md:pr-6 md:pl-[6.188rem] lg:pl-[8.188rem] lg:pr-10">
+                <div className="flex items-center justify-between px-4 pt-2 md:pt-4 md:pr-6 md:pl-[6.188rem] lg:pl-[8.188rem] lg:pr-10">
                     <h2 className="uppercase text-[0.813rem] md:text-base font-bold tracking-wider">Featured</h2>
 
                     <span className="py-[7px] px-4 text-sm md:text-base text-[#00754a] font-semibold">See all</span>
@@ -395,8 +395,80 @@ export const GiftCards: React.FC = () => {
                             Bulk send physical or digital Starbucks Cards to gift, reward, incentivize, or show appreciation towards your customers, clients and team members. Minimum 15 cards per order.
                         </p>
 
-                        <button className="text-sm md:text-base hover:bg-[#6b6c6b]/15 border border-black font-semibold py-[7px] px-4 mt-4 md:mt-10 rounded-3xl transition-colors duration-300 ease-in-out">
+                        <button className="flex items-center text-sm md:text-base hover:bg-[#6b6c6b]/15 border border-black font-semibold py-[7px] px-4 mt-4 md:mt-10 rounded-3xl transition-colors duration-300 ease-in-out">
                             Shop now
+                            <svg
+                                className="inline ml-[3px] w-[18px]"
+                                aria-hidden="true"
+                                focusable="false"
+                                preserveAspectRatio="xMidYMid meet"
+                                viewBox="0 0 24 24"
+                            >
+                                <path d="M14.5003 3.30018C14.0861 3.30021 13.7503 3.63602 13.7504 4.05024C13.7504 4.46445 14.0862 4.80021 14.5004 4.80018L17.7958 4.79994L11.2981 11.2976C11.0052 11.5905 11.0052 12.0654 11.2981 12.3583C11.591 12.6512 12.0659 12.6512 12.3588 12.3583L18.8566 5.86046V8.99966C18.8566 9.41388 19.1924 9.74966 19.6066 9.74966C20.0208 9.74966 20.3566 9.41388 20.3566 8.99966V4.0498C20.3566 3.85088 20.2776 3.66011 20.1369 3.51945C19.9963 3.3788 19.8055 3.29979 19.6065 3.2998L14.5003 3.30018Z"></path>
+                                <path d="M6 3.99966H12V5.49966H6C5.72386 5.49966 5.5 5.72352 5.5 5.99966V17.9997C5.5 18.2758 5.72386 18.4997 6 18.4997H18C18.2761 18.4997 18.5 18.2758 18.5 17.9997V11.2497H20V17.9997C20 19.1042 19.1046 19.9997 18 19.9997H6C4.89543 19.9997 4 19.1042 4 17.9997V5.99966C4 4.89509 4.89543 3.99966 6 3.99966Z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section className="bg-[#edebe9]">
+                <div className="py-6 px-4 md:py-12 md:pr-6 md:pl-[6.188rem] md:flex lg:pr-10 lg:pl-[8.188rem]">
+                    <div className="md:mr-14">
+                        <div>
+                            <h2 className="md:text-[1.188rem] md:leading-[1.781rem] font-semibold">
+                                About eGift cards
+                            </h2>
+
+                            <p className="py-4 text-[0.813rem] leading-[1.219rem] md:text-sm font-medium">
+                                A Starbucks eGift card (also known as an “eGift”) is a Starbucks Gift Card that is purchased and sent digitally.
+                            </p>
+
+                            <p className="text-[0.813rem] leading-[1.219rem] md:text-sm font-medium">
+                                For Senders of an eGift, go to eGift History when signed in to view, send, or resend eGifts you’ve purchased — or, to directly contact Starbucks eGift Support for help with your order.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 className="pt-6 md:text-[1.188rem] md:leading-[1.781rem] font-semibold">
+                                Questions around eGift cards?
+                            </h2>
+
+                            <p className="py-4 text-[0.813rem] leading-[1.219rem] md:text-sm font-medium">
+                                Check our Frequently Asked Questions — your question might already be answered. There, you’ll find answers for all Starbucks Gift Cards in general (including eGifts).
+                            </p>
+
+                            <button className="flex items-center hover:bg-stone-500/20 border border-black rounded-3xl font-semibold text-sm md:text-base py-[7px] px-4">
+                                Card FAQs
+                                <svg
+                                    className="inline ml-[3px] w-[18px]"
+                                    aria-hidden="true"
+                                    focusable="false"
+                                    preserveAspectRatio="xMidYMid meet"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path d="M14.5003 3.30018C14.0861 3.30021 13.7503 3.63602 13.7504 4.05024C13.7504 4.46445 14.0862 4.80021 14.5004 4.80018L17.7958 4.79994L11.2981 11.2976C11.0052 11.5905 11.0052 12.0654 11.2981 12.3583C11.591 12.6512 12.0659 12.6512 12.3588 12.3583L18.8566 5.86046V8.99966C18.8566 9.41388 19.1924 9.74966 19.6066 9.74966C20.0208 9.74966 20.3566 9.41388 20.3566 8.99966V4.0498C20.3566 3.85088 20.2776 3.66011 20.1369 3.51945C19.9963 3.3788 19.8055 3.29979 19.6065 3.2998L14.5003 3.30018Z"></path>
+                                    <path d="M6 3.99966H12V5.49966H6C5.72386 5.49966 5.5 5.72352 5.5 5.99966V17.9997C5.5 18.2758 5.72386 18.4997 6 18.4997H18C18.2761 18.4997 18.5 18.2758 18.5 17.9997V11.2497H20V17.9997C20 19.1042 19.1046 19.9997 18 19.9997H6C4.89543 19.9997 4 19.1042 4 17.9997V5.99966C4 4.89509 4.89543 3.99966 6 3.99966Z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 className="pt-6 md:text-[1.188rem] md:leading-[1.781rem] font-semibold">
+                            About Starbucks Gift Cards in general
+                        </h2>
+
+                        <p className="py-4 text-[0.813rem] leading-[1.219rem] md:text-sm font-medium">
+                            Starbucks Gift Cards, including eGifts, can be used to pay in a Starbucks store or to join Starbucks® Rewards.
+                        </p>
+
+                        <p className="text-[0.813rem] leading-[1.219rem] md:text-sm font-medium pb-4">
+                            Register Gift Cards and eGifts to a Starbucks® Rewards account and earn 2★ per dollar every time you pay with that card. Those Stars quickly add up to free food, drinks, and more!
+                        </p>
+
+                        <button className="flex items-center hover:bg-stone-500/20 border border-black rounded-3xl font-semibold text-sm md:text-base py-[7px] px-4">
+                            Card Terms & Conditions
                             <svg
                                 className="inline ml-[3px] w-[18px]"
                                 aria-hidden="true"
