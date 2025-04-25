@@ -315,7 +315,7 @@ export const GiftCards: React.FC = () => {
                 </section>
             </div>
 
-            <section className="pl-4 md:pl-[6.188rem] lg:pl-[8.188rem] lg:pr-16 ">
+            <section className="pl-4 pb-2 md:pl-[6.188rem] lg:pl-[8.188rem] lg:pr-16 ">
                 <div className="flex items-center justify-between">
                     <h2 className="uppercase text-[0.813rem] md:text-sm md:mb-2 font-bold tracking-widest">Anytime</h2>
 
@@ -376,6 +376,39 @@ export const GiftCards: React.FC = () => {
                         src="https://globalassets.starbucks.com/digitalassets/cards/fy23/HeritageMultipackFY23.jpg"
                         alt="Gift card image: Three Starbucks Siren logos are shown, including the brown Siren, the black and white Siren and the free-floating Siren."
                     />
+                </div>
+            </section>
+
+            <section className="bg-[#f9f9f9]">
+                <div className="pt-10 md:pt-14 px-4 md:pr-6 lg:pr-10  pb-8 md:pb-14 md:pl-[6.188rem] lg:pl-[8.188rem] md:flex">
+                    <img
+                        className="block md:mr-10 self-center"
+                        src="https://www.starbucks.com/weblx/images/gift/bulk-gift-cards.jpg"
+                        alt="A stack of Starbucks Cards being prepared as gifts"
+                        width={375}
+                    />
+
+                    <div className="md:mr-8">
+                        <h2 className="text-2xl pt-6 md:pt-0 pr-4 pb-2 font-medium">Business gifting — simplified</h2>
+
+                        <p className="text-[#6b6c6b] text-sm md:text-base font-medium max-w-[42ch]">
+                            Bulk send physical or digital Starbucks Cards to gift, reward, incentivize, or show appreciation towards your customers, clients and team members. Minimum 15 cards per order.
+                        </p>
+
+                        <button className="text-sm md:text-base hover:bg-[#6b6c6b]/15 border border-black font-semibold py-[7px] px-4 mt-4 md:mt-10 rounded-3xl transition-colors duration-300 ease-in-out">
+                            Shop now
+                            <svg
+                                className="inline ml-[3px] w-[18px]"
+                                aria-hidden="true"
+                                focusable="false"
+                                preserveAspectRatio="xMidYMid meet"
+                                viewBox="0 0 24 24"
+                            >
+                                <path d="M14.5003 3.30018C14.0861 3.30021 13.7503 3.63602 13.7504 4.05024C13.7504 4.46445 14.0862 4.80021 14.5004 4.80018L17.7958 4.79994L11.2981 11.2976C11.0052 11.5905 11.0052 12.0654 11.2981 12.3583C11.591 12.6512 12.0659 12.6512 12.3588 12.3583L18.8566 5.86046V8.99966C18.8566 9.41388 19.1924 9.74966 19.6066 9.74966C20.0208 9.74966 20.3566 9.41388 20.3566 8.99966V4.0498C20.3566 3.85088 20.2776 3.66011 20.1369 3.51945C19.9963 3.3788 19.8055 3.29979 19.6065 3.2998L14.5003 3.30018Z"></path>
+                                <path d="M6 3.99966H12V5.49966H6C5.72386 5.49966 5.5 5.72352 5.5 5.99966V17.9997C5.5 18.2758 5.72386 18.4997 6 18.4997H18C18.2761 18.4997 18.5 18.2758 18.5 17.9997V11.2497H20V17.9997C20 19.1042 19.1046 19.9997 18 19.9997H6C4.89543 19.9997 4 19.1042 4 17.9997V5.99966C4 4.89509 4.89543 3.99966 6 3.99966Z"></path>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </section>
         </main>
