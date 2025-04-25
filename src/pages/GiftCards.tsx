@@ -1,95 +1,20 @@
-import { useEffect, useRef, useState } from "react";
-import { FaAngleRight as Angle } from "react-icons/fa6";
-
+import { Carousel } from "../components/Carousel"
 
 export const GiftCards: React.FC = () => {
-    const carouselRef = useRef<HTMLDivElement | null>(null)
-
-    const [isAtEnd, setIsAtEnd] = useState(false)
-    const [isAtStart, setIsAtStart] = useState(true)
-
-    function handleCarouselRightClick(event: React.MouseEvent<HTMLButtonElement>) {
-        event.preventDefault()
-
-        if (carouselRef.current) {
-            const card = carouselRef.current.querySelector("img")
-            if (card) {
-                const cardWidth = card.clientWidth + 16
-                const scrollAmount = cardWidth * 3
-                carouselRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" })
-            }
-        }
-    }
-
-    function handleCarouselLeftClick(event: React.MouseEvent<HTMLButtonElement>) {
-        event.preventDefault()
-
-        if (carouselRef.current) {
-            const card = carouselRef.current.querySelector("img")
-            if (card) {
-                const cardWidth = card.clientWidth + 16
-                const scrollAmount = cardWidth * 3
-                carouselRef.current.scrollBy({ left: -scrollAmount, behavior: "smooth" })
-            }
-        }
-    }
-
-    useEffect(() => {
-        const carousel = carouselRef.current
-        if (!carousel) return
-
-        function handleScroll() {
-            if (carousel) {
-                const { scrollLeft, scrollWidth, clientWidth } = carousel
-
-                setIsAtEnd(scrollLeft + clientWidth >= scrollWidth - 1)
-                setIsAtStart(scrollLeft <= 10)
-            }
-        }
-        handleScroll()
-
-        function handleResize() {
-            handleScroll()
-        }
-
-        carousel.addEventListener("scroll", handleScroll)
-        window.addEventListener("resize", handleResize)
-        return () => {
-            carousel.removeEventListener("scroll", handleScroll)
-            window.removeEventListener("resize", handleResize)
-        }
-    }, [])
-
-
     return (
-        <main className="pt-2">
+        <main className="py-2">
             <h1 className="text-[1.75rem] leading-[2.256rem] md:text-4xl font-bold md:pt-14 px-4 pt-2 md:pr-6 md:pl-[6.188rem] lg:pl-[8.188rem] lg:pr-10">Gift cards</h1>
 
             <section className="pt-4">
-                <div className="relative flex items-center justify-between px-4 pt-2 md:pr-6 md:pl-[6.188rem] lg:pl-[8.188rem] lg:pr-10">
+                <div className="flex items-center justify-between px-4 pt-2 md:pr-6 md:pl-[6.188rem] lg:pl-[8.188rem] lg:pr-10">
                     <h2 className="uppercase text-[0.813rem] md:text-base font-bold tracking-wider">Featured</h2>
 
                     <span className="py-[7px] px-4 text-sm md:text-base text-[#00754a] font-semibold">See all</span>
                 </div>
 
-                <div ref={carouselRef} className="hide-scrollbar z-40 flex pb-4 pr-16 overflow-x-auto scroll-smooth px-4 pt-2 md:pr-6 md:pl-[6.188rem] lg:pl-[8.188rem] lg:pr-10">
-                    <div className="absolute right-0 top-[180px] md:top-[240px] lg:top-[270px] h-24 md:h-[140px] lg:h-[180px] xl:h-[200px] min1702:h-[300px] w-16 md:w-20 bg-white/80 z-40" />
-                    {!isAtEnd && <button
-                        className="absolute z-50 top-[230px] md:top-[300px] lg:top-[355px] min1702:top-[410px]  -translate-y-1/2 right-7 md:right-10 lg:right-14 rounded-full bg-white border p-3 cursor-pointer"
-                        onClick={handleCarouselRightClick}
-                    >
-                        <Angle />
-                    </button>}
-
-                    {!isAtStart && <button
-                        className="absolute z-50 top-[230px] md:top-[300px] lg:top-[355px] min1702:top-[410px] -translate-y-1/2 left-4 lg:left-[130px] xl:left-[138px] rounded-full bg-white border p-3 cursor-pointer"
-                        onClick={handleCarouselLeftClick}
-                    >
-                        <Angle className="rotate-180" />
-                    </button>}
-
+                <Carousel>
                     <img
-                        className="w-[33%] md:w-[31%] lg:w-[23%] xl:w-[22%] mr-2 xl:mr-4 rounded-lg hover:-translate-y-2 transition-transform duration-300 ease-in-out drop-shadow-[0_4px_3px_rgba(0,0,0,0.35)] cursor-pointer"
+                        className="w-[30%] md:w-[31%] lg:w-[23%] xl:w-[22%] mr-2 xl:mr-4 rounded-lg hover:-translate-y-2 transition-transform duration-300 ease-in-out drop-shadow-[0_4px_3px_rgba(0,0,0,0.35)] cursor-pointer"
                         src="https://globalassets.starbucks.com/digitalassets/cards/fy25/SpringSeasonalFY25.png"
                         alt="Gift card image: A field of yellow, blue and purple flowers sit in front of a purple cloudy sky. "
                     />
@@ -147,7 +72,7 @@ export const GiftCards: React.FC = () => {
                         src="https://globalassets.starbucks.com/digitalassets/cards/fy22/BigThankYouFY22.jpg"
                         alt="Gift card image: A Big Thank You with the words A Big written in small pale blue letters and arched over the top of the larger words Thank You."
                     />
-                </div>
+                </Carousel>
 
                 <div className="flex items-center gap-4 bg-[#edebe9] rounded-lg p-4 mx-4 md:mr-6 mt-2 md:ml-[6.188rem] lg:ml-[8.188rem] lg:mr-10">
                     <img
@@ -388,15 +313,19 @@ export const GiftCards: React.FC = () => {
                         />
                     </div>
                 </section>
+            </div>
 
-                <section className="pt-1 md:pt-4 pb-2">
-                    <div className="flex items-center justify-between">
-                        <h2 className="uppercase text-[0.813rem] md:text-sm md:mb-2 font-bold tracking-widest">Anytime</h2>
+            <section className="pl-4 md:pl-[6.188rem] lg:pl-[8.188rem] lg:pr-16 ">
+                <div className="flex items-center justify-between">
+                    <h2 className="uppercase text-[0.813rem] md:text-sm md:mb-2 font-bold tracking-widest">Anytime</h2>
 
-                        <button className="text-sm md:text-base font-semibold text-[#00754a] cursor-pointer" aria-label="Click to see all images.">See all</button>
-                    </div>
+                    <button className="py-[7px] px-4 mr-4 text-sm md:text-base font-semibold text-[#00754a] cursor-pointer lg:hidden" aria-label="Click to see all images.">See all</button>
+                </div>
 
-                    <div className="flex py-4 pr-16">
+                <div className="-ml-4 pt-2 md:-ml-[6.188rem] lg:hidden">
+                    <Carousel
+                        bgWidth="w-6"
+                    >
                         <img
                             className="gift-card-commemoration-img"
                             src="https://globalassets.starbucks.com/digitalassets/cards/fy23/YayForCoffeeFY24.png"
@@ -420,9 +349,35 @@ export const GiftCards: React.FC = () => {
                             src="https://globalassets.starbucks.com/digitalassets/cards/fy23/HeritageMultipackFY23.jpg"
                             alt="Gift card image: Three Starbucks Siren logos are shown, including the brown Siren, the black and white Siren and the free-floating Siren."
                         />
-                    </div>
-                </section>
-            </div>
+                    </Carousel>
+                </div>
+
+                <div className="max-lg:hidden flex pb-4 pr-16 pt-2">
+                    <img
+                        className="gift-card-commemoration-img"
+                        src="https://globalassets.starbucks.com/digitalassets/cards/fy23/YayForCoffeeFY24.png"
+                        alt="Gift card image: Two hands hold up Starbucks beverages from the bottom of this card with the words Yay for Coffee arched over them against a pink background covered in confetti."
+                    />
+
+                    <img
+                        className="gift-card-commemoration-img"
+                        src="https://globalassets.starbucks.com/digitalassets/cards/fy20/BrailleFY20.jpg"
+                        alt="Gift card image: A close up of a white Siren covers the left half of this Starbucks green card."
+                    />
+
+                    <img
+                        className="gift-card-commemoration-img"
+                        src="https://globalassets.starbucks.com/digitalassets/cards/fy24/CoffeeOClockFY24.png"
+                        alt="Gift card image: An orange digital clock with the word “coffee” written across the face sits in the center of an off-white background surrounded by green stars, with the word It’s written above and OClock written below the clock."
+                    />
+
+                    <img
+                        className="w-[33%] lg:w-[26%] xl:w-[24%] rounded-lg hover:-translate-y-2 transition-transform duration-300 ease-in-out drop-shadow-[0_4px_3px_rgba(0,0,0,0.35)] cursor-pointer"
+                        src="https://globalassets.starbucks.com/digitalassets/cards/fy23/HeritageMultipackFY23.jpg"
+                        alt="Gift card image: Three Starbucks Siren logos are shown, including the brown Siren, the black and white Siren and the free-floating Siren."
+                    />
+                </div>
+            </section>
         </main>
     )
 }
