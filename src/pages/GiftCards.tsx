@@ -6,7 +6,7 @@ export const GiftCards: React.FC = () => {
             <h1 className="text-[1.75rem] leading-[2.256rem] md:text-4xl font-bold md:pt-14 px-4 pt-2 md:pr-6 md:pl-[6.188rem] lg:pl-[8.188rem] lg:pr-10">Gift cards</h1>
 
             <section className="pt-4">
-                <div className="flex items-center justify-between px-4 pt-2 md:pr-6 md:pl-[6.188rem] lg:pl-[8.188rem] lg:pr-10">
+                <div className="flex items-center justify-between px-4 pt-2 md:pt-4 md:pr-6 md:pl-[6.188rem] lg:pl-[8.188rem] lg:pr-10">
                     <h2 className="uppercase text-[0.813rem] md:text-base font-bold tracking-wider">Featured</h2>
 
                     <span className="py-[7px] px-4 text-sm md:text-base text-[#00754a] font-semibold">See all</span>
