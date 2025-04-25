@@ -30,3 +30,11 @@ select {
 .hide-scrollbar::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
+
+.gift-card-carousel-img {
+  @apply w-[33%] md:w-[31%] lg:w-[23%] xl:w-[22%] mx-2 xl:mx-4 rounded-lg hover:-translate-y-2 transition-transform duration-300 ease-in-out drop-shadow-[0_4px_3px_rgba(0,0,0,0.35)] cursor-pointer;
+}
+
+.gift-card-commemoration-img {
+  @apply mr-4 xl:mr-8 w-[33%] lg:w-[26%] xl:w-[24%] rounded-lg hover:-translate-y-2 transition-transform duration-300 ease-in-out drop-shadow-[0_4px_3px_rgba(0,0,0,0.35)] cursor-pointer;
+}

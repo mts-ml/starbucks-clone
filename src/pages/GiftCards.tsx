@@ -89,61 +89,61 @@ export const GiftCards: React.FC = () => {
                     </button>}
 
                     <img
-                        className="w-[120px] md:w-[180px] lg:w-[250px] xl:w-[300px] min1702:w-[450px] mr-2 rounded-lg hover:-translate-y-2 transition-transform duration-300 ease-in-out drop-shadow-[0_4px_3px_rgba(0,0,0,0.35)] cursor-pointer"
+                        className="w-[33%] md:w-[31%] lg:w-[23%] xl:w-[22%] mr-2 xl:mr-4 rounded-lg hover:-translate-y-2 transition-transform duration-300 ease-in-out drop-shadow-[0_4px_3px_rgba(0,0,0,0.35)] cursor-pointer"
                         src="https://globalassets.starbucks.com/digitalassets/cards/fy25/SpringSeasonalFY25.png"
                         alt="Gift card image: A field of yellow, blue and purple flowers sit in front of a purple cloudy sky. "
                     />
 
                     <img
-                        className="w-[120px] md:w-[180px] lg:w-[250px] xl:w-[300px] min1702:w-[450px] mx-2 rounded-lg hover:-translate-y-2 transition-transform duration-300 ease-in-out drop-shadow-[0_4px_3px_rgba(0,0,0,0.35)] cursor-pointer"
+                        className="gift-card-carousel-img"
                         src="https://globalassets.starbucks.com/digitalassets/cards/fy25/HappyMothersDayFY25.png"
                         alt="Gift card image: Happy Mother's Day is written on a light green background, surrounded by colorful spring flowers. "
                     />
 
                     <img
-                        className="w-[120px] md:w-[180px] lg:w-[250px] xl:w-[300px] min1702:w-[450px] mx-2 rounded-lg hover:-translate-y-2 transition-transform duration-300 ease-in-out drop-shadow-[0_4px_3px_rgba(0,0,0,0.35)] cursor-pointer"
+                        className="gift-card-carousel-img"
                         src="https://globalassets.starbucks.com/digitalassets/cards/fy25/MakeLearningFunFY25.png"
                         alt="Gift card image: You make learning fun is written across the pages of an open book surrounded by foliage on a green and orange patterned background. "
                     />
 
                     <img
-                        className="w-[120px] md:w-[180px] lg:w-[250px] xl:w-[300px] min1702:w-[450px] mx-2 rounded-lg hover:-translate-y-2 transition-transform duration-300 ease-in-out drop-shadow-[0_4px_3px_rgba(0,0,0,0.35)] cursor-pointer"
+                        className="gift-card-carousel-img"
                         src="https://globalassets.starbucks.com/digitalassets/cards/fy25/HealthcareHeroFY25.png"
                         alt="Gift card image: For a healthcare hero is written inside a heart-shaped stethoscope surrounded by medical supplies on a light green background. "
                     />
 
                     <img
-                        className="w-[120px] md:w-[180px] lg:w-[250px] xl:w-[300px] min1702:w-[450px] mx-2 rounded-lg hover:-translate-y-2 transition-transform duration-300 ease-in-out drop-shadow-[0_4px_3px_rgba(0,0,0,0.35)] cursor-pointer"
+                        className="gift-card-carousel-img"
                         src="https://globalassets.starbucks.com/digitalassets/cards/fy25/LoveYouMomFY25.png"
                         alt="Gift card image: Love You, Mom is written on a light background, surrounded by a breakfast buffet of flowers, coffee and breakfast foods. "
                     />
 
                     <img
-                        className="w-[120px] md:w-[180px] lg:w-[250px] xl:w-[300px] min1702:w-[450px] mx-2 rounded-lg hover:-translate-y-2 transition-transform duration-300 ease-in-out drop-shadow-[0_4px_3px_rgba(0,0,0,0.35)] cursor-pointer"
+                        className="gift-card-carousel-img"
                         src="https://globalassets.starbucks.com/digitalassets/cards/fy25/HappyBirthdayFY25.png"
                         alt="Gift card image: A sliced birthday cake sits on top of a blue table with the words Happy Birthday curved across the design in dark green. "
                     />
 
                     <img
-                        className="w-[120px] md:w-[180px] lg:w-[250px] xl:w-[300px] min1702:w-[450px] mx-2 rounded-lg hover:-translate-y-2 transition-transform duration-300 ease-in-out drop-shadow-[0_4px_3px_rgba(0,0,0,0.35)] cursor-pointer"
+                        className="gift-card-carousel-img"
                         src="https://globalassets.starbucks.com/digitalassets/cards/fy25/ThankYouFY25.png"
                         alt="Gift card image: Thank You is written in shuffled letters on a blue and green multi-colored geometric background with black stars. "
                     />
 
                     <img
-                        className="w-[120px] md:w-[180px] lg:w-[250px] xl:w-[300px] min1702:w-[450px] mx-2 rounded-lg hover:-translate-y-2 transition-transform duration-300 ease-in-out drop-shadow-[0_4px_3px_rgba(0,0,0,0.35)] cursor-pointer"
+                        className="gift-card-carousel-img"
                         src="https://globalassets.starbucks.com/digitalassets/cards/fy25/YouAreAwesomeFY25.png"
                         alt="Gift card image: You are Awesome is written in punched out purple and red letters on an orange splattered background. "
                     />
 
                     <img
-                        className="w-[120px] md:w-[180px] lg:w-[250px] xl:w-[300px] min1702:w-[450px] mx-2 rounded-lg hover:-translate-y-2 transition-transform duration-300 ease-in-out drop-shadow-[0_4px_3px_rgba(0,0,0,0.35)] cursor-pointer"
+                        className="gift-card-carousel-img"
                         src="https://globalassets.starbucks.com/digitalassets/cards/fy25/CelebrationFY25.png"
                         alt="Gift card image: An iced Starbucks cup exploding with multi-colored confetti sits in front of a dark green background.  "
                     />
 
                     <img
-                        className="w-[120px] md:w-[180px] lg:w-[250px] xl:w-[300px] min1702:w-[450px] mx-2 rounded-lg hover:-translate-y-2 transition-transform duration-300 ease-in-out drop-shadow-[0_4px_3px_rgba(0,0,0,0.35)] cursor-pointer"
+                        className="gift-card-carousel-img"
                         src="https://globalassets.starbucks.com/digitalassets/cards/fy22/BigThankYouFY22.jpg"
                         alt="Gift card image: A Big Thank You with the words A Big written in small pale blue letters and arched over the top of the larger words Thank You."
                     />
@@ -203,12 +203,223 @@ export const GiftCards: React.FC = () => {
                 </div>
             </section>
 
-            <div className="px-4">
-                <section className="pt-1 pb-2">
-                    <h2 className="uppercase text-[0.813rem] md:text-sm font-bold">Mother's day | 5/12</h2>
+            <div className="px-4 md:pl-[6.188rem] md:pr-16 lg:pl-[8.188rem]">
+                <section className="pt-1 md:pt-4 pb-2">
+                    <h2 className="uppercase text-[0.813rem] md:text-sm md:mb-2 font-bold tracking-widest">Mother's day | 5/12</h2>
 
-                    <div>
+                    <div className="flex py-4 pr-16">
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy25/HappyMothersDayFY25.png"
+                            alt="Gift card image: Happy Mother's Day is written on a light green background, surrounded by colorful spring flowers. "
+                        />
 
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy25/LoveYouMomFY25.png"
+                            alt="Gift card image: Love You, Mom is written on a light background, surrounded by a breakfast buffet of flowers, coffee and breakfast foods. "
+                        />
+                    </div>
+                </section>
+
+                <section className="pt-1 md:pt-4 pb-2">
+                    <h2 className="uppercase text-[0.813rem] md:text-sm md:mb-2 font-bold tracking-widest">Teacher Appreciation</h2>
+
+                    <div className="flex py-4 pr-16">
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy25/MakeLearningFunFY25.png"
+                            alt="Gift card image: You make learning fun is written across the pages of an open book surrounded by foliage on a green and orange patterned background."
+                        />
+
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy23/AbsolutelyAmazingTeacherFY23.jpg" alt="Gift card image: A pencil, a ruler, a pen and a book are stacked against a green background in the center of this card, with “Absolutely Amazing Teacher” written across the ruler, the pen and the book."
+                        />
+                    </div>
+                </section>
+
+                <section className="pt-1 md:pt-4 pb-2">
+                    <h2 className="uppercase text-[0.813rem] md:text-sm md:mb-2 font-bold tracking-widest">Nurse Appreciation</h2>
+
+                    <div className="flex py-4 pr-16">
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy25/HealthcareHeroFY25.png"
+                            alt="Gift card image: For a healthcare hero is written inside a heart-shaped stethoscope surrounded by medical supplies on a light green background."
+                        />
+
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy24/WorldOfThanksFY24.png"
+                            alt="Gift card image: A nurse in green scrubs with a red stethoscope around their neck is holding a hot Starbucks cup and from the steam of the cup, A World Of Thanks is written in green with a blue and yellow background."
+                        />
+                    </div>
+                </section>
+
+                <section className="pt-1 md:pt-4 pb-2">
+                    <h2 className="uppercase text-[0.813rem] md:text-sm md:mb-2 font-bold tracking-widest">Birthday</h2>
+
+                    <div className="flex py-4 pr-16">
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy25/HolidayBirthdayFY25.png"
+                            alt="Gift card image: Happy Birthday is written on a vibrant pink and red birthday cake with candles sitting on a green party table."
+                        />
+
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy25/HappyBirthdayFY25.png"
+                            alt="Gift card image: A sliced birthday cake sits on top of a blue table with the words Happy Birthday curved across the design in dark green."
+                        />
+                    </div>
+                </section>
+
+                <section className="pt-1 md:pt-4 pb-2">
+                    <h2 className="uppercase text-[0.813rem] md:text-sm md:mb-2 font-bold tracking-widest">Thank You</h2>
+
+                    <div className="flex py-4 pr-16">
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy25/ThankYouFY25.png"
+                            alt="Gift card image: Thank You is written in shuffled letters on a blue and green multi-colored geometric background with black stars."
+                        />
+
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy24/MyTreatFY24.jpg"
+                            alt="Gift card image: A hand extends from the right holding a steaming Starbucks beverage, with My Treat written in green letters above it against a shaded green and white background."
+                        />
+
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy22/BigThankYouFY22.jpg"
+                            alt="Gift card image: A Big Thank You with the words A Big written in small pale blue letters and arched over the top of the larger words Thank You."
+                        />
+                    </div>
+                </section>
+
+                <section className="pt-1 md:pt-4 pb-2">
+                    <h2 className="uppercase text-[0.813rem] md:text-sm md:mb-2 font-bold tracking-widest">Celebration</h2>
+
+                    <div className="flex py-4 pr-16">
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy25/CelebrationFY25.png"
+                            alt="Gift card image: An iced Starbucks cup exploding with multi-colored confetti sits in front of a dark green background."
+                        />
+                    </div>
+                </section>
+
+                <section className="pt-1 md:pt-4 pb-2">
+                    <h2 className="uppercase text-[0.813rem] md:text-sm md:mb-2 font-bold tracking-widest">Appreciation</h2>
+
+                    <div className="flex py-4 pr-16">
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy25/YouAreAwesomeFY25.png"
+                            alt="Gift card image: You are Awesome is written in punched out purple and red letters on an orange splattered background."
+                        />
+
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy25/CouldntDoItWithoutYouFY25.png"
+                            alt="Gift card image: Couldn't Do It Without You is written in a wavy within a light green cloud surrounded by multi-colored shapes on a green striped background."
+                        />
+                    </div>
+                </section>
+
+                <section className="pt-1 md:pt-4 pb-2">
+                    <h2 className="uppercase text-[0.813rem] md:text-sm md:mb-2 font-bold tracking-widest">Spring</h2>
+
+                    <div className="flex py-4 pr-16">
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy25/SpringSeasonalFY25.png"
+                            alt="Gift card image: A field of yellow, blue and purple flowers sit in front of a purple cloudy sky."
+                        />
+
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
+                            alt="Gift card image: A field of multi-colored tulips covers the foreground, while a grassy hill and two windmills are seen in the background."
+                        />
+                    </div>
+                </section>
+
+                <section className="pt-1 md:pt-4 pb-2">
+                    <h2 className="uppercase text-[0.813rem] md:text-sm md:mb-2 font-bold tracking-widest">Encouragement</h2>
+
+                    <div className="flex py-4 pr-16">
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy24/YouGotThisFY24.png"
+                            alt="Gift card image: You Got This is written in wavy orange letters and centered against a background of puffy white clouds in a light blue sky."
+                        />
+
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy22/GoodVibesFY22.jpg"
+                            alt="Gift card image: A rainbow stretches across with a white cloud at each end against a green background, with the words Sending Good Vibes under the rainbow."
+                        />
+                    </div>
+                </section>
+
+                <section className="pt-1 md:pt-4 pb-2">
+                    <h2 className="uppercase text-[0.813rem] md:text-sm md:mb-2 font-bold tracking-widest">Workplace</h2>
+
+                    <div className="flex py-4 pr-16">
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy24/AboveBeyondFY24.png"
+                            alt="Gift card image: Above plus Beyond equals You is written in green letters across a wavy background texture of purple, blue, green, and yellow background with a few white stars."
+                        />
+
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy23/GreatWorkDeservesCoffeeFY23.jpg"
+                            alt="Gift card image: Two hands meet in a high five against a background with Great Work arched over the top of the hands and Deserves Coffee across the bottom."
+                        />
+
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy25/CouldntDoItWithoutYouFY25.png"
+                            alt="Gift card image: Couldn't Do It Without You is written in a wavy within a light green cloud surrounded by multi-colored shapes on a green striped background."
+                        />
+                    </div>
+                </section>
+
+                <section className="pt-1 md:pt-4 pb-2">
+                    <div className="flex items-center justify-between">
+                        <h2 className="uppercase text-[0.813rem] md:text-sm md:mb-2 font-bold tracking-widest">Anytime</h2>
+
+                        <button className="text-sm md:text-base font-semibold text-[#00754a] cursor-pointer" aria-label="Click to see all images.">See all</button>
+                    </div>
+
+                    <div className="flex py-4 pr-16">
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy23/YayForCoffeeFY24.png"
+                            alt="Gift card image: Two hands hold up Starbucks beverages from the bottom of this card with the words Yay for Coffee arched over them against a pink background covered in confetti."
+                        />
+
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy20/BrailleFY20.jpg"
+                            alt="Gift card image: A close up of a white Siren covers the left half of this Starbucks green card."
+                        />
+
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy24/CoffeeOClockFY24.png"
+                            alt="Gift card image: An orange digital clock with the word “coffee” written across the face sits in the center of an off-white background surrounded by green stars, with the word It’s written above and OClock written below the clock."
+                        />
+
+                        <img
+                            className="gift-card-commemoration-img"
+                            src="https://globalassets.starbucks.com/digitalassets/cards/fy23/HeritageMultipackFY23.jpg"
+                            alt="Gift card image: Three Starbucks Siren logos are shown, including the brown Siren, the black and white Siren and the free-floating Siren."
+                        />
                     </div>
                 </section>
             </div>
