@@ -1,6 +1,8 @@
 import { Layout } from './pages/Layout'
 import { Home } from './pages/Home'
-import { Menu } from './pages/Menu'
+import { MenuLayout } from './pages/Menu/MenuLayout'
+import { Menu } from './pages/Menu/Menu'
+import { Previous } from './pages/Menu/Previous'
 import { Rewards } from './pages/Rewards'
 import { GiftCards } from './pages/GiftCards'
 import { ErrorPage } from './pages/ErrorPage'
@@ -11,8 +13,12 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route element={<Layout />}>
     <Route path='/' element={<Home />} />
-    <Route path="menu" element={<Menu />} />
-    
+    <Route path="menu" element={<MenuLayout />} >
+      <Route index element={<Menu />} />
+      <Route path="previous" element={<Previous />} />
+
+    </Route>
+
     <Route path="rewards" element={<Rewards />} />
     <Route path="gift-cards" element={<GiftCards />} />
     <Route path="*" element={<ErrorPage />} />
