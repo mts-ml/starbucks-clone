@@ -1,7 +1,7 @@
 export const Previous: React.FC = () => {
     return (
         <main className="mx-4 md:ml-[6.188rem] lg:ml-[8.188rem] h-[58.5rem]">
-            <h1 className="text-2xl font-bold max-md:px-4 my-4 md:my-10">Previous</h1>
+            <h1 className="text-2xl font-extrabold max-md:px-4 my-4 md:my-10">Previous</h1>
 
             <img
                 className="block mt-10"
