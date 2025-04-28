@@ -1,53 +1,6 @@
-import { useState } from "react"
-import { NavLink } from "react-router-dom"
-
-
-export const Menu: React.FC = () => {
-    const [selected, setSelected] = useState<number | null>(null)
-
-    function handleSelectedOption(index: number) {
-        if (selected === null || selected !== index) {
-            setSelected(index)
-        }
-    }
-
-
+export const Menu: React.FC = () => {  
     return (
-        <main>
-            <nav className="flex items-center px-4 md:pl-[6.188rem] lg:pl-[8.188rem] md:pr-6 lg:pr-10 bg-[#f9f9f9] h-[51.5px] border-b border-t border-black/20 shadow-[0_-2px_4px_rgba(0,0,0,0.05)]">
-                <ul className="flex gap-8 text-[0.813rem] font-medium">
-                    <li>
-                        <NavLink to="."
-                            end
-                            className={({ isActive }) => `${isActive ? "link-underline" : ""}`}
-                        >
-                            Menu
-                        </NavLink>
-                    </li>
-
-                    <li
-                        onClick={() => handleSelectedOption(1)}
-                        className={selected === 1 ? "link-underline" : ""}
-                    >
-                        Featured
-                    </li>
-
-                    <li
-                        onClick={() => handleSelectedOption(2)}
-                        className={selected === 2 ? "link-underline" : ""}
-                    >
-                        Previous
-                    </li>
-
-                    <li
-                        onClick={() => handleSelectedOption(3)}
-                        className={selected === 3 ? "link-underline" : ""}
-                    >
-                        Favorites
-                    </li>
-                </ul>
-            </nav>
-
+        <main>           
             <div className="flex">
                 <aside className="max-lg:hidden pl-[7.35rem] lg:pl-[8.188rem] pt-10">
                     <h3 className="text-[1.188rem] font-semibold mb-4">Drinks</h3>

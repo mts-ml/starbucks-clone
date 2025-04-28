@@ -18,7 +18,7 @@ export const Rewards: React.FC = () => {
                 <div className="mx-auto max-w-[95rem] flex justify-between items-center h-[3.125rem] px-4 md:pr-6 md:pl-[6.188rem] lg:pr-10 lg:pl-[6.9rem] text-[0.813rem] md:text-sm min1520:px-[2.2rem]">
                     <p className="font-semibold uppercase min1520:mx-0">Starbucks® Rewards</p>
 
-                    <button className="md:hidden border rounded-full px-4 py-1 font-semibold">Join in the app</button>
+                    <button className="md:hidden border rounded-full px-4 py-1 sm:py-[7px] font-semibold">Join in the app</button>
                 </div>
             </div>
 
@@ -120,12 +120,14 @@ export const Rewards: React.FC = () => {
 
                 <section className="bg-[#F1F8F5]">
                     <div className="mx-auto max-w-5xl">
-                        <h2 className="pt-12 pb-6 font-semibold text-center text-2xl md:text-[1.75rem] leading-[2.425rem]  ">Get your favorites for free</h2>
+                        <h2 className="pt-12 pb-4 px-4 font-semibold text-center text-2xl md:text-[1.75rem] leading-[2.425rem]">
+                            Get your favorites for free
+                        </h2>
 
-                        <ul className="flex items-center justify-center gap-14 mb-5">
+                        <ul className="flex items-center justify-center mb-4">
                             <li>
                                 <button
-                                    className={`font-semibold text-[1.188rem] md:text-2xl ${selected === 0 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
+                                    className={`font-semibold text-[1.188rem] md:text-2xl pt-2 px-2 pb-4 ${selected === 0 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
                                     onClick={() => handleFavorite(0)}
                                     aria-controls="favorite1"
                                 >
@@ -136,7 +138,7 @@ export const Rewards: React.FC = () => {
 
                             <li>
                                 <button
-                                    className={`font-semibold text-[1.188rem] md:text-2xl ${selected === 1 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
+                                    className={`font-semibold text-[1.188rem] md:text-2xl pt-2 px-2 pb-4 ${selected === 1 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
                                     onClick={() => handleFavorite(1)}
                                     aria-controls="favorite2"
                                 >
@@ -146,7 +148,7 @@ export const Rewards: React.FC = () => {
                             </li>
                             <li>
                                 <button
-                                    className={`font-semibold text-[1.188rem] md:text-2xl ${selected === 2 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
+                                    className={`font-semibold text-[1.188rem] md:text-2xl pt-2 px-2 pb-4 ${selected === 2 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
                                     onClick={() => handleFavorite(2)}
                                     aria-controls="favorite3"
                                 >
@@ -157,7 +159,7 @@ export const Rewards: React.FC = () => {
 
                             <li>
                                 <button
-                                    className={`font-semibold text-[1.188rem] md:text-2xl ${selected === 3 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
+                                    className={`font-semibold text-[1.188rem] md:text-2xl pt-2 px-2 pb-4 ${selected === 3 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
                                     onClick={() => handleFavorite(3)}
                                     aria-controls="favorite4"
                                 >
@@ -168,7 +170,7 @@ export const Rewards: React.FC = () => {
 
                             <li>
                                 <button
-                                    className={`font-semibold text-[1.188rem] md:text-2xl ${selected === 4 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
+                                    className={`font-semibold text-[1.188rem] md:text-2xl pt-2 px-2 pb-4 ${selected === 4 ? "link-underline-rewards after:scale-100" : "after:scale-0"}`}
                                     onClick={() => handleFavorite(4)}
                                     aria-controls="favorite5"
                                 >

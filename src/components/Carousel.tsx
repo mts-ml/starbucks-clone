@@ -55,7 +55,7 @@ export const Carousel: React.FC<CarouselProps> = ( {children, bgWidth = "w-16"} 
         <div className="relative">
 
             {/* BACKGROUND WITH OPACITY */}
-            <div className={`absolute right-0 top-0 h-full ${bgWidth} bg-white/80 z-40`} />
+            <div className={`absolute right-0 top-0 h-full ${bgWidth} bg-white/80 z-10`} />
 
             <div ref={carouselRef} className="hide-scrollbar z-40 flex pb-4 pr-16 overflow-x-auto scroll-smooth px-4 pt-2 md:pt-6 md:pl-[6.188rem] lg:pl-[8.188rem]">
                 {children}
@@ -63,7 +63,7 @@ export const Carousel: React.FC<CarouselProps> = ( {children, bgWidth = "w-16"} 
 
             {/* ARROWS */}
             {!isAtEnd && <button
-                className="absolute z-50 top-1/2 -translate-y-1/2 right-7 md:right-10 lg:right-14 rounded-full bg-white border p-3 cursor-pointer shadow-lg hover:scale-105 transition-transform"
+                className="absolute z-20 top-1/2 -translate-y-1/2 right-7 md:right-10 lg:right-14 rounded-full bg-white border p-3 cursor-pointer shadow-lg hover:scale-105 transition-transform"
                 aria-label="Click on the arrow to advance the carousel."
                 onClick={() => handleCarouselClick('right')}
             >
@@ -71,7 +71,7 @@ export const Carousel: React.FC<CarouselProps> = ( {children, bgWidth = "w-16"} 
             </button>}
 
             {!isAtStart && <button
-                className="absolute z-50 top-1/2 -translate-y-1/2 left-4 lg:left-[130px] xl:left-[138px] rounded-full bg-white border p-3 cursor-pointer"
+                className="absolute z-20 top-1/2 -translate-y-1/2 left-4 lg:left-[130px] xl:left-[138px] rounded-full bg-white border p-3 cursor-pointer"
                 aria-label="Click on the arrow to return the carousel."
                 onClick={() => handleCarouselClick('left')}
             >
