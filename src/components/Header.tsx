@@ -8,6 +8,7 @@ export const Header: React.FC = () => {
 
     const location = useLocation()
     const homePage = location.pathname === "/"
+    const featuredPage = location.pathname === "/menu/featured"
 
     function handleToggleMenu() {
         setToggleMenu(!toggleMenu)
@@ -93,8 +94,8 @@ export const Header: React.FC = () => {
                         </div>
 
                         {/* HEADER ON LARGE SCREEN */}
-                        <div className={`relative hidden min803:flex items-center justify-between h-[83px] lg:h-[99px] ${homePage ? "max-w-[95rem] mx-auto lg:px-[33px]" : "px-6 lg:px-10"}`}>
-                            <Link to="/" className='mr-[25px] lg:mr-[41.61px]'>
+                        <div className={`relative hidden min803:flex items-center justify-between h-[83px] lg:h-[99px] px-6 lg:px-10 ${homePage || featuredPage ? "max-w-[95rem] mx-auto" : "px-6 lg:px-10"}`}>
+                            <Link to="/" className={`mr-[25px] lg:mr-[41.61px] ${homePage || featuredPage ? "" : ""}`}>
                                 <img
                                     src={logo}
                                     className="w-[40px] md:w-[55px]"
