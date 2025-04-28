@@ -1,21 +1,20 @@
-export const Previous: React.FC = () => {
+export const Favorites: React.FC = () => {
     return (
         <main className="mx-4 md:ml-[6.188rem] lg:ml-[8.188rem] h-[58.5rem]">
-            <h1 className="text-2xl font-extrabold max-md:px-4 my-4 md:my-10">Previous</h1>
+            <h1 className="text-2xl font-extrabold max-md:px-4 my-4 md:my-10">Favorites</h1>
 
             <img
-                className="block mt-10"
-                src="https://www.starbucks.com/weblx/images/moon-phases.gif"
-                alt="Animated illustration shows phases of the moon."
+                className="block mt-10 w-[12.5rem]"
+                src="https://www.starbucks.com/weblx/images/fav-tapes.png"
+                alt="Illustration of well-used vintage mix tapes."
             />
 
-
-            <h2 className="mt-4 font-semibold text-xl sm:text-2xl md:text-[1.75rem] leading-[2.425rem] md:max-w-[20ch]">
-                When history repeats itself
+            <h2 className="mt-4 font-semibold text-xl sm:text-2xl md:text-[1.75rem] leading-[2.425rem] md:max-w-[15ch]">
+                Save your favorite mixes
             </h2>
 
-            <p className="my-4 sm:text-[1.188rem] sm:leading-[1.781rem] text-[#6B6B6B] font-medium max-w-[30ch]">
-                Previous orders will appear here to quickly order again.
+            <p className="my-4 sm:text-[1.188rem] sm:leading-[1.781rem] text-[#6B6B6B] font-medium max-w-[30ch] md:max-w-[26ch]">
+                Use the heart to save customizations. Your favorites will appear here to order again.
             </p>
 
             <div className='flex items-center gap-4 pt-2'>

@@ -1,6 +1,6 @@
 export const Home: React.FC = () => {
    return (
-      <main className="mt-8 max-w-[91rem] mx-auto">
+      <main className="mt-8 max-w-[90rem] mx-auto">
 
          {/* 1º section */}
          <section className="md:flex md:flex-row-reverse bg-[#32462F] text-[#FFFCF8] font-semibold text-center mb-8">
