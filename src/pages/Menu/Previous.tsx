@@ -6,14 +6,15 @@ export const Previous: React.FC = () => {
             <img
                 className="block mt-10"
                 src="https://www.starbucks.com/weblx/images/moon-phases.gif"
-                alt="Animated illustration shows phases of the moon"
+                alt="Animated illustration shows phases of the moon."
             />
 
-            <h2 className="mt-4 font-semibold text-xl sm:text-2xl md:text-[1.75rem] leading-[2.425rem]">
+
+            <h2 className="mt-4 font-semibold text-xl sm:text-2xl md:text-[1.75rem] leading-[2.425rem] md:max-w-[20ch]">
                 When history repeats itself
             </h2>
 
-            <p className="my-4 sm:text-[1.188rem] sm:leading-[1.781rem] text-[#6B6B6B] font-medium">
+            <p className="my-4 sm:text-[1.188rem] sm:leading-[1.781rem] text-[#6B6B6B] font-medium max-w-[30ch]">
                 Previous orders will appear here to quickly order again.
             </p>
 
