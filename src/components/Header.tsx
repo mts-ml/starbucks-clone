@@ -94,8 +94,8 @@ export const Header: React.FC = () => {
                         </div>
 
                         {/* HEADER ON LARGE SCREEN */}
-                        <div className={`relative hidden min803:flex items-center justify-between h-[83px] lg:h-[99px] px-6 lg:px-10 ${homePage || featuredPage ? "max-w-[95rem] mx-auto" : "px-6 lg:px-10"}`}>
-                            <Link to="/" className={`mr-[25px] lg:mr-[41.61px] ${homePage || featuredPage ? "" : ""}`}>
+                        <div className={`relative hidden min803:flex items-center justify-between h-[83px] lg:h-[99px] px-6 lg:px-10 ${homePage || featuredPage ? "max-w-[95rem] mx-auto min1702:px-10" : "px-6 lg:px-10"}`}>
+                            <Link to="/" className={`mr-[25px] lg:mr-[41.61px] ${homePage || featuredPage ? "min1702:absolute min1702:left-[-55px]" : ""}`}>
                                 <img
                                     src={logo}
                                     className="w-[40px] md:w-[55px]"
@@ -110,7 +110,13 @@ export const Header: React.FC = () => {
                                         <li className={`uppercase hover:text-[#08754A]`}>
                                             <NavLink
                                                 to="menu"
-                                                className={({ isActive }) => isActive ? "relative w-full no-underline before:absolute before:content-[''] before:top-[45px] lg:before:top-[52px] before:left-0 before:h-[6px] before:w-[100%] before:bg-[#00754a]" : ""}
+                                                className={({ isActive }) => {
+                                                    if (featuredPage) {
+                                                        return "relative w-full no-underline"
+                                                    }
+
+                                                    return isActive ? "relative w-full no-underline before:absolute before:content-[''] before:top-[45px] lg:before:top-[52px] before:left-0 before:h-[6px] before:w-[100%] before:bg-[#00754a]" : ""}
+                                                }
                                             >
                                                 menu
                                             </NavLink>
