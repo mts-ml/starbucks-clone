@@ -7,8 +7,7 @@ export const Header: React.FC = () => {
     const [toggleMenu, setToggleMenu] = useState(false)
 
     const location = useLocation()
-    const menuPage = location.pathname === "/menu"
-    const giftCardsPage = location.pathname === "/gift-cards"
+    const homePage = location.pathname === "/"
 
     function handleToggleMenu() {
         setToggleMenu(!toggleMenu)
@@ -24,16 +23,16 @@ export const Header: React.FC = () => {
 
     useEffect(() => {
         setToggleMenu(false)
-    },[location.pathname])
+    }, [location.pathname])
 
 
     return (
         <>
-            <header className="relative z-30 w-full shadow">
-                <div className={`${menuPage ? "" : "mx-auto max-w-[95rem]"} ${giftCardsPage ? "mx-0 max-w-full" : ""}`}>
+            <header className="relative z-30 shadow">
+                <div>
                     <nav aria-label='Main navigation'>
 
-                        <div className='relative min803:hidden z-50 h-[72px] px-4 md:px-6 flex items-center justify-between xl:mx-0'>
+                        <div className='relative min803:hidden z-50 h-[72px] md:h-[83px] px-4 md:px-6 flex items-center justify-between xl:mx-0'>
                             <Link to="/">
                                 <img
                                     src={logo}
@@ -80,7 +79,7 @@ export const Header: React.FC = () => {
                                 </div>
                             </div>
 
-                            <button type='button' className='flex align-items px-6 gap-1.5 text-sm font-semibold hover:text-[#08754A] mt-5'>
+                            <button type='button' className='flex align-items gap-1.5 text-sm font-semibold hover:text-[#08754A] mt-5'>
                                 <svg
                                     aria-hidden="true"
                                     focusable="false"
@@ -94,69 +93,70 @@ export const Header: React.FC = () => {
                         </div>
 
                         {/* HEADER ON LARGE SCREEN */}
-                        <div className={`relative hidden min803:flex min803:items-center justify-between h-[83px] lg:h-[99px] px-6 ${menuPage ? "lg:ml-[4.2rem] lg:px-10" : "lg:px-8"} ${giftCardsPage ? "md:pl-[6.188rem] lg:pr-10 lg:pl-[8.188rem]" : ""} `}>
+                        <div className={`relative hidden min803:flex items-center justify-between h-[83px] lg:h-[99px] ${homePage ? "max-w-[95rem] mx-auto lg:px-[33px]" : "px-6 lg:px-10"}`}>
+                            <Link to="/" className='mr-[25px] lg:mr-[41.61px]'>
+                                <img
+                                    src={logo}
+                                    className="w-[40px] md:w-[55px]"
+                                    aria-hidden="true"
+                                    alt="Starbucks logo"
+                                />
+                            </Link>
 
-                            <div className='md:flex md:items-center'>
-                                <Link to="/" className={`${giftCardsPage ? "md:absolute left-[25px] lg:left-[40px]" : "min1702:absolute min1702:left-[-55px]"} ${menuPage ? "lg:absolute left-[-30px] min1702:left-[-30px]" : ""}`}>
-                                    <img
-                                        src={logo}
-                                        className="w-[40px] md:w-[50px]"
-                                        aria-hidden="true"
-                                        alt="Starbucks logo"
-                                    />
-                                </Link>
+                            <div className='flex items-center justify-between w-full'>
+                                <div className='md:flex md:items-center'>
+                                    <ul className='flex min1702:ml-0 font-bold text-sm tracking-widest cursor-pointer'>
+                                        <li className={`uppercase hover:text-[#08754A]`}>
+                                            <NavLink
+                                                to="menu"
+                                                className={({ isActive }) => isActive ? "relative w-full no-underline before:absolute before:content-[''] before:top-[45px] lg:before:top-[52px] before:left-0 before:h-[6px] before:w-[100%] before:bg-[#00754a]" : ""}
+                                            >
+                                                menu
+                                            </NavLink>
+                                        </li>
 
-                                <ul className='flex min1702:ml-0 font-bold text-sm tracking-widest cursor-pointer'>
-                                    <li className={`ml-6 uppercase hover:text-[#08754A] ${menuPage ? "" : "min1702:ml-0"} ${giftCardsPage ? "md:ml-0" : ""}`}>
-                                        <NavLink
-                                            to="menu"
-                                            className={({ isActive }) => isActive ? "relative w-full no-underline before:absolute before:content-[''] before:top-[45px] lg:before:top-[52px] before:left-0 before:h-[6px] before:w-[100%] before:bg-[#00754a]" : ""}
-                                        >
-                                            menu
-                                        </NavLink>
-                                    </li>
+                                        <li className='ml-6 uppercase hover:text-[#08754A]'>
+                                            <NavLink
+                                                to="rewards"
+                                                className={({ isActive }) => isActive ? "relative w-full no-underline before:absolute before:content-[''] before:top-[45px] lg:before:top-[52px] before:left-0 before:h-[6px] before:w-[100%] before:bg-[#00754a]" : ""}
+                                            >
+                                                rewards
+                                            </NavLink>
+                                        </li>
 
-                                    <li className='ml-6 uppercase hover:text-[#08754A]'>
-                                        <NavLink
-                                            to="rewards"
-                                            className={({ isActive }) => isActive ? "relative w-full no-underline before:absolute before:content-[''] before:top-[45px] lg:before:top-[52px] before:left-0 before:h-[6px] before:w-[100%] before:bg-[#00754a]" : ""}
-                                        >
-                                            rewards
-                                        </NavLink>
-                                    </li>
+                                        <li className='ml-6 uppercase hover:text-[#08754A]'>
+                                            <NavLink
+                                                to="gift-cards"
+                                                className={({ isActive }) => isActive ? "relative w-full no-underline before:absolute before:content-[''] before:top-[45px] lg:before:top-[52px] before:left-0 before:h-[6px] before:w-[100%] before:bg-[#00754a]" : ""}
+                                            >
+                                                gift cards
+                                            </NavLink>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                                    <li className='ml-6 uppercase hover:text-[#08754A]'>
-                                        <NavLink
-                                            to="gift-cards"
-                                            className={({ isActive }) => isActive ? "relative w-full no-underline before:absolute before:content-[''] before:top-[45px] lg:before:top-[52px] before:left-0 before:h-[6px] before:w-[100%] before:bg-[#00754a]" : ""}
-                                        >
-                                            gift cards
-                                        </NavLink>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div className='md:flex md:items-center gap-12'>
-                                <button type='button' className='flex align-items gap-1.5 text-sm font-semibold hover:text-[#08754A]'>
-                                    <svg
-                                        aria-hidden="true"
-                                        focusable="false"
-                                        preserveAspectRatio="xMidYMid meet"
-                                        style={{ width: 24, height: 24, overflow: 'visible', fill: 'currentColor' }}
-                                        viewBox="0 0 24 24">
-                                        <path d="M12,11.475 C10.5214286,11.475 9.32142857,10.299 9.32142857,8.85 C9.32142857,7.401 10.5214286,6.225 12,6.225 C13.4785714,6.225 14.6785714,7.401 14.6785714,8.85 C14.6785714,10.299 13.4785714,11.475 12,11.475 M12,1.5 C7.85357143,1.5 4.5,4.7865 4.5,8.85 C4.5,14.3625 12,22.5 12,22.5 C12,22.5 19.5,14.3625 19.5,8.85 C19.5,4.7865 16.1464286,1.5 12,1.5"></path>
-                                    </svg>
-                                    Find a store
-                                </button>
-
-                                <div className='flex items-center gap-4'>
-                                    <button className='border border-black border-solid font-semibold rounded-3xl text-sm px-3.5 py-1.5 hover:bg-black/10 transition-colors duration-150 ease-in-out' type='button'>
-                                        Sign in
+                                <div className='md:flex md:items-center'>
+                                    <button type='button' className='flex align-items gap-1.5 text-sm font-semibold hover:text-[#08754A] pl-[7.24px] pr-4 mx-6 lg:mx-10'>
+                                        <svg
+                                            aria-hidden="true"
+                                            focusable="false"
+                                            preserveAspectRatio="xMidYMid meet"
+                                            style={{ width: 24, height: 24, overflow: 'visible', fill: 'currentColor' }}
+                                            viewBox="0 0 24 24">
+                                            <path d="M12,11.475 C10.5214286,11.475 9.32142857,10.299 9.32142857,8.85 C9.32142857,7.401 10.5214286,6.225 12,6.225 C13.4785714,6.225 14.6785714,7.401 14.6785714,8.85 C14.6785714,10.299 13.4785714,11.475 12,11.475 M12,1.5 C7.85357143,1.5 4.5,4.7865 4.5,8.85 C4.5,14.3625 12,22.5 12,22.5 C12,22.5 19.5,14.3625 19.5,8.85 C19.5,4.7865 16.1464286,1.5 12,1.5"></path>
+                                        </svg>
+                                        Find a store
                                     </button>
 
-                                    <button className='border border-black border-solid bg-black text-white hover:bg-black/70 font-semibold rounded-3xl text-sm px-3.5 py-1.5 transition-colors duration-150 ease-in-out' type='button'>
-                                        Join now
-                                    </button>
+                                    <div className='flex items-center gap-4'>
+                                        <button className='border border-black border-solid font-semibold rounded-3xl text-sm px-3.5 py-1.5 hover:bg-black/10 transition-colors duration-150 ease-in-out' type='button'>
+                                            Sign in
+                                        </button>
+
+                                        <button className='border border-black border-solid bg-black text-white hover:bg-black/70 font-semibold rounded-3xl text-sm px-3.5 py-1.5 transition-colors duration-150 ease-in-out' type='button'>
+                                            Join now
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
