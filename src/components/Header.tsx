@@ -59,7 +59,7 @@ export const Header: React.FC = () => {
                         </div>
 
                         {/* MENU */}
-                        <div className={`min803:hidden fixed top-[72px] z-20 h-full transition-all duration-1000 ease-in-out bg-white w-4/5 border-t-2 border-black/10  ${toggleMenu ? 'right-0' : '-right-[700px]'}`}>
+                        <div className={`min803:hidden fixed top-[72px] z-20 h-full transition-all duration-700 ease-in-out bg-white w-4/5 border-t-2 border-black/10  ${toggleMenu ? 'right-0' : '-right-[700px]'}`}>
 
                             <ul className='flex flex-col my-8 mx-8 pb-8 gap-6 border-b-2 border-black/10 font-medium text-[1.188rem]'>
                                 <li><Link to="menu">Menu</Link></li>
@@ -69,13 +69,12 @@ export const Header: React.FC = () => {
 
 
                             <div className='md:flex md:items-center gap-12'>
-
                                 <div className='flex items-center px-6 gap-4'>
-                                    <button className='border border-black border-solid font-semibold rounded-3xl text-sm px-3.5 py-1 hover:bg-black/10 transition-colors duration-150 ease-in-out' type='button'>
+                                    <button className='py-[7px] px-4 border border-black border-solid font-semibold rounded-3xl text-sm hover:bg-black/10 transition-colors duration-150 ease-in-out' type='button'>
                                         Sign in
                                     </button>
 
-                                    <button className='border border-black border-solid bg-black text-white hover:bg-black/70 font-semibold rounded-3xl text-sm px-3.5 py-1.5 transition-colors duration-150 ease-in-out' type='button'>
+                                    <button className='py-[7px] px-4 border border-black border-solid bg-black text-white hover:bg-black/70 font-semibold rounded-3xl text-sm transition-colors duration-150 ease-in-out' type='button'>
                                         Join now
                                     </button>
                                 </div>
