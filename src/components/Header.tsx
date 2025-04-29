@@ -59,12 +59,14 @@ export const Header: React.FC = () => {
                         </div>
 
                         {/* MENU */}
-                        <div className={`min803:hidden fixed top-[72px] z-20 h-full transition-all duration-700 ease-in-out bg-white w-4/5 border-t-2 border-black/10  ${toggleMenu ? 'right-0' : '-right-[700px]'}`}>
+                        <div className={`min803:hidden fixed top-[72px] md:top-[83px] z-20 h-full transition-all duration-700 ease-in-out bg-white w-4/5 border-t-2 border-black/10  ${toggleMenu ? 'right-0' : '-right-[700px]'}`}>
 
-                            <ul className='flex flex-col my-8 mx-8 pb-8 gap-6 border-b-2 border-black/10 font-medium text-[1.188rem]'>
-                                <li><Link to="menu">Menu</Link></li>
-                                <li><Link to="rewards">Rewards</Link></li>
-                                <li><Link to="gift-cards">Gift Cards</Link></li>
+                            <ul className='flex flex-col my-8 mx-8 pb-8 gap-6 border-b-2 border-black/10 font-medium text-[1.188rem] leading-[1.781rem] md:text-2xl'>
+                                <li className='pt-4'><Link to="menu">Menu</Link></li>
+
+                                <li className='pt-4'><Link to="rewards">Rewards</Link></li>
+
+                                <li className='pt-4'><Link to="gift-cards">Gift Cards</Link></li>
                             </ul>
 
 
@@ -80,7 +82,7 @@ export const Header: React.FC = () => {
                                 </div>
                             </div>
 
-                            <button type='button' className='flex align-items gap-1.5 text-sm font-semibold hover:text-[#08754A] mt-5'>
+                            <button type='button' className='flex align-items gap-1.5 text-sm font-semibold hover:text-[#08754A] px-6 mt-5'>
                                 <svg
                                     aria-hidden="true"
                                     focusable="false"
@@ -115,7 +117,8 @@ export const Header: React.FC = () => {
                                                         return "relative w-full no-underline"
                                                     }
 
-                                                    return isActive ? "relative w-full no-underline before:absolute before:content-[''] before:top-[45px] lg:before:top-[52px] before:left-0 before:h-[6px] before:w-[100%] before:bg-[#00754a]" : ""}
+                                                    return isActive ? "relative w-full no-underline before:absolute before:content-[''] before:top-[45px] lg:before:top-[52px] before:left-0 before:h-[6px] before:w-[100%] before:bg-[#00754a]" : ""
+                                                }
                                                 }
                                             >
                                                 menu
@@ -171,7 +174,7 @@ export const Header: React.FC = () => {
                 </div>
             </header>
 
-            {toggleMenu && <div className='min803:hidden fixed inset-0 z-10 top-[75px] bg-black opacity-50'></div>}
+            {toggleMenu && <div className='min803:hidden fixed inset-0 z-10 top-[72px] md:top-[83px] bg-black opacity-50'></div>}
         </>
     )
 }
