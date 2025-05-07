@@ -53,7 +53,8 @@ export const Header: React.FC = () => {
                                     onClick={handleToggleMenu}
                                 >
                                     <div className="absolute top-4 -mt-0.5  bg-black w-6 h-[2px] rounded opacity-60 transition-all duration-500    before:absolute before:content-[''] before:bg-black before:w-6 before:h-[2px] before:rounded  before:-translate-x-3 before:-translate-y-[6px] before:transition-all before:duration-500
-                                after:absolute after:content-[''] after:bg-black after:w-6 after:h-[2px] after:rounded after:-translate-x-3 after:translate-y-[6px] after:transition-all after:duration-500"></div>
+                                after:absolute after:content-[''] after:bg-black after:w-6 after:h-[2px] after:rounded after:-translate-x-3 after:translate-y-[6px] after:transition-all after:duration-500"
+                                    />
                                 </button>
                             </div>
                         </div>
